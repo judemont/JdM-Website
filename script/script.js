@@ -49,4 +49,10 @@ function getUserMessage(){
 
 }
 
+function keyPressedInput(event) {
+    if (event.key == "Enter") {
+        getUserMessage()
+    }
+}
+
 initMessages();
