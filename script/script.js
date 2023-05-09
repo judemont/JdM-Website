@@ -22,8 +22,6 @@ function initMessages(){
     addMessage("<b>Info:</b> <i>JdM</i> joined the chat.", 100);
     addMessage("<b>Info:</b> <i>You</i> joined the chat.", 500);
     addMessage("<b>JdM:</b> Hello, Welcome to my website👋 !", 2000);
-
-    addMessage('<b>JdM:</b> Here are the questions you can ask me: ' + getAvailableQuestionsString(), 4000);
 }
 
 function getAvailableQuestionsString() {
@@ -44,6 +42,7 @@ function findAnswer(q){
             return me[meKeys[i]];
         }
     }
+    return("Did you mean : " + getAvailableQuestionsString() + " ?");
 }
 function getUserMessage(){
     let messageContent = userInput.value;
