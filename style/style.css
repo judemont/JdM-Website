@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+}
+.message{
+    
+}
+.messageText{
+    font-family: monospace;
+    color: rgb(0, 141, 0);
+    font-size: 30px;
+}
