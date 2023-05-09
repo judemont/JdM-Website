@@ -12,4 +12,5 @@ function addMessage(message) {
     messZone.appendChild(MessageComponent(message))
 }
 
-addMessage("<b>Info:</b> JdM joined the chat")
+addMessage("<b>Info:</b> <i>JdM</i> joined the chat.")
+addMessage("<b>JdM:</b> Hello, Welcome to my website !")
