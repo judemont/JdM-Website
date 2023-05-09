@@ -22,11 +22,16 @@ function initMessages(){
     addMessage("<b>Info:</b> <i>JdM</i> joined the chat.", 100);
     addMessage("<b>Info:</b> <i>You</i> joined the chat.", 500);
     addMessage("<b>JdM:</b> Hello, Welcome to my website👋 !", 2000);
+
+    addMessage('<b>JdM:</b> Here are the questions you can ask me: ' + getAvailableQuestionsString(), 4000);
+}
+
+function getAvailableQuestionsString() {
     let available_questions = "<br>";
     for(let i = 0; i < Object.keys(me).length; i++){
         available_questions += "'" + Object.keys(me)[i] + "',<br> ";
     }
-    addMessage('<b>JdM:</b> Here are the questions you can ask me: ' + available_questions, 4000);
+    return available_questions;
 }
 
 function findAnswer(q){
