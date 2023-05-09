@@ -30,7 +30,11 @@ body{
 }
 
 footer{
-    position: fixed;
+    
     top: 90%;
     color: rgb(192, 192, 192);
+}
+
+.messagesSystem{
+    margin-bottom: 50px;
 }
