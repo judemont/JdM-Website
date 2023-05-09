@@ -27,9 +27,9 @@ function initMessages(){
 
 function getUserMessage(){
     let messageContent = userInput.value;
-    addMessage("<b>You:</b>" + messageContent)
+    addMessage("<b>You:</b> " + messageContent)
     answer = me[messageContent];
-    addMessage("<b>JdM:</b>" + answer, 1000)
+    addMessage("<b>JdM:</b> " + answer, 1000)
     userInput.value = ""
 
 }
