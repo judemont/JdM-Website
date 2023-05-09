@@ -26,8 +26,10 @@ function initMessages(){
 }
 
 function getUserMessage(){
-    
-    const messageContent = userInput.value;
+    let messageContent = userInput.value;
+    answer = me[messageContent];
+    addMessage(answer, 1000)
+    messageContent = ""
 
 }
 
