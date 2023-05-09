@@ -21,7 +21,7 @@ function addMessage(message, msBeforeSend) {
 function initMessages(){
     addMessage("<b>Info:</b> <i>JdM</i> joined the chat.", 100);
     addMessage("<b>Info:</b> <i>You</i> joined the chat.", 500);
-    addMessage("<b>JdM:</b> Hello, Welcome to my website !", 2000);
+    addMessage("<b>JdM:</b> Hello, Welcome to my website👋 !", 2000);
     let available_questions = "<br>";
     for(let i = 0; i < Object.keys(me).length; i++){
         available_questions += "'" + Object.keys(me)[i] + "',<br> ";
