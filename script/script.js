@@ -1,4 +1,7 @@
 const messZone = document.getElementById("messagesZone");
+const userInputDiv = document.getElementById("userInputAndButton");
+const userInput = document.getElementById("userInput");
+
 function MessageComponent(message){
     const messageDiv = document.createElement("div");
     messageDiv.setAttribute("class", "message");
@@ -8,10 +11,24 @@ function MessageComponent(message){
     messageDiv.appendChild(messageText);
     return messageDiv;
 }
-function addMessage(message) {
-    messZone.appendChild(MessageComponent(message))
+
+function addMessage(message, msBeforeSend) {
+    setTimeout(() => {
+        messZone.appendChild(MessageComponent(message));
+    }, msBeforeSend);
 }
 
-addMessage("<b>Info:</b> <i>JdM</i> joined the chat.")
-addMessage("<b>Info:</b> <i>You</i> joined the chat.")
-addMessage("<b>JdM:</b> Hello, Welcome to my website !")
+function initMessages(){
+    addMessage("<b>Info:</b> <i>JdM</i> joined the chat.", 100);
+    addMessage("<b>Info:</b> <i>You</i> joined the chat.", 500);
+    addMessage("<b>JdM:</b> Hello, Welcome to my website !", 2000);
+    addMessage('<b>JdM:</b> Here are the questions you can ask me: <br>"Who are you?",<br> "What are your skills?",<br> "How can I contact you?,<br> "What is you projects?".', 4000);
+}
+
+function getUserMessage(){
+    
+    const messageContent = userInput.value;
+
+}
+
+initMessages();
