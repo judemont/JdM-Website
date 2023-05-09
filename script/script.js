@@ -13,4 +13,5 @@ function addMessage(message) {
 }
 
 addMessage("<b>Info:</b> <i>JdM</i> joined the chat.")
+addMessage("<b>Info:</b> <i>You</i> joined the chat.")
 addMessage("<b>JdM:</b> Hello, Welcome to my website !")
