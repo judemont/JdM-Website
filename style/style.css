@@ -28,3 +28,9 @@ body{
     font-family: monospace;
     
 }
+
+footer{
+    position: fixed;
+    top: 90%;
+    color: rgb(192, 192, 192);
+}
