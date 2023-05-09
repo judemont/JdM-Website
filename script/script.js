@@ -29,7 +29,7 @@ function getUserMessage(){
     let messageContent = userInput.value;
     addMessage("<b>You:</b>" + messageContent)
     answer = me[messageContent];
-    addMessage(answer, 1000)
+    addMessage("<b>JdM:</b>" + answer, 1000)
     userInput.value = ""
 
 }
