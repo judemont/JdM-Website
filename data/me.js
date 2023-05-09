@@ -7,7 +7,7 @@ const me = {
         "why did you make this site like this": "Because I want to.",
         "what language are you speaking": "My native language is French, but I also speak some English.",
         "where do you live": "I live in Switzerland🇨🇭 but I am on the earth🌍, like you!",
-        "i need help": "<a href='https://duckduckgo.com/?t=ffab&q=I+need+help'>---</a>",
+        "i need help": "<a href='https://duckduckgo.com/?t=ffab&q=I+need+help' target='_blank'>---</a>",
         "what is your real name": "My real name is : <br><b>🚫HTTP Server Error 403. Forbidden: You don't have permission to access api/getMyName.php on this server</b>🚫",
         "how can i contact you": "📞 You can contact me with: <br> GitHub : <a href='https://github.com/judemont'>github.com/judemont</a> <br> Telegram : <a href='https://t.me/judemont'>t.me/judemont</a> <br> Email : <a href='mailto:julien@rmbi.ch?subject=Hi JdM !'>julien@rmbi.ch</a>"
 }
