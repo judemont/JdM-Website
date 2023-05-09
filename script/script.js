@@ -1,3 +1,13 @@
+let y = 50;
+function writeMessage(message){
+    const MESSAGE_FONT = "800 20px monospace";
+    const MESSAGE_STYLE = "green"
+    ctx.font = MESSAGE_FONT;
+    ctx.fillStyle = MESSAGE_STYLE;
+    ctx.fillText(message, 50, y); 
+    y += 30;
+}
+
 const c = document.getElementById("mainCanvas");
 var ctx = c.getContext("2d");
 
@@ -5,6 +15,5 @@ c.width = window.innerWidth;
 c.height = window.innerHeight;
 
 
-ctx.font = "30px Arial";
-ctx.fillText("*JdM joined the chat*", 0, 10); 
-ctx.stroke();
+writeMessage("Info: *JdM joined the chat*")
+writeMessage("JdM: Hello, Welcome to my website ?")
