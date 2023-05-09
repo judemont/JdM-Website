@@ -5,6 +5,7 @@ const me = {
 "which operating system do you use": "I use ubuntu (linux)🐧🐧.",
 "which text editor do you use": "I use Visual Studio Code.",
 "why did you make this site like this": "Because I want to.",
+"where do you live": "I live in Switzerland🇨🇭",
 "what is your real name": "My real name is : <br><b>🚫HTTP Server Error 403. Forbidden: You don't have permission to access api/getMyName.php on this server</b>🚫",
 "how can i contact you": "📞 You can contact me with: <br> GitHub : <a href='https://github.com/judemont'>github.com/judemont</a> <br> Telegram : <a href='https://t.me/judemont'>t.me/judemont</a> <br> Email : <a href='mailto:julien@rmbi.ch?subject=Hi JdM !'>julien@rmbi.ch</a>"
 }
