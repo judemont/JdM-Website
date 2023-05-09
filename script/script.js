@@ -29,10 +29,21 @@ function initMessages(){
     addMessage('<b>JdM:</b> Here are the questions you can ask me: ' + available_questions, 4000);
 }
 
+function findAnswer(q){
+    q = q.toLowerCase()
+    meKeys = Object.keys(me)
+    for(let i = 0; i < meKeys.length; i++){
+        console.log(meKeys[i]);
+        console.log(q)
+        if(q.includes(meKeys[i])){
+            return me[meKeys[i]];
+        }
+    }
+}
 function getUserMessage(){
     let messageContent = userInput.value;
     addMessage("<b>You:</b> " + messageContent)
-    answer = me[messageContent];
+    let answer = findAnswer(userInput.value)
     addMessage("<b>JdM:</b> " + answer, 1000)
     userInput.value = ""
 
