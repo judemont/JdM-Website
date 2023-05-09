@@ -24,7 +24,7 @@ function initMessages(){
     addMessage("<b>JdM:</b> Hello, Welcome to my website !", 2000);
     let available_questions = "";
     for(let i = 0; i < Object.keys(me).length; i++){
-        available_questions += "'" me[i] + "',<br> ";
+        available_questions += "'" + me[i] + "',<br> ";
     }
     addMessage('<b>JdM:</b> Here are the questions you can ask me: ' + available_questions, 4000);
 }
