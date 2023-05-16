@@ -45,8 +45,8 @@ function findAnswer(userQuestion) {
     let bestAnswer = "";
   
     for (let i = 0; i < Object.keys(me).length; i++) {
-      const question = Object.keys(me)[i];
-      const answer = me[question];
+      const question = userQuestion;
+      const answer = me[Object.keys(me)[i]];
   
       // Prétraitement des questions et des réponses
   
@@ -60,7 +60,7 @@ function findAnswer(userQuestion) {
         bestAnswer = answer;
       }
     }
-  
+
     return bestAnswer;
   }
   
