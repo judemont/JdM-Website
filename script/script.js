@@ -33,10 +33,10 @@ function getAvailableQuestionsString() {
 }
 
 function calculateCosineSimilarity(vectorA, vectorB) {
-    const dotProduct = math.multiply(vectorA, vectorB);
-    const magnitudeA = math.sqrt(math.multiply(vectorA, vectorA));
-    const magnitudeB = math.sqrt(math.multiply(vectorB, vectorB));
-    const similarity = math.divide(dotProduct, math.multiply(magnitudeA, magnitudeB));
+    const dotProduct = vectorA * vectorB;
+    const magnitudeA = Math.sqrt(Math.multiply(vectorA, vectorA));
+    const magnitudeB = Math.sqrt(Math.multiply(vectorB, vectorB));
+    const similarity = dotProduct / (magnitudeA * magnitudeB);
     return similarity;
 }
   
