@@ -34,8 +34,8 @@ function getAvailableQuestionsString() {
 
 function calculateCosineSimilarity(vectorA, vectorB) {
     const dotProduct = vectorA * vectorB;
-    const magnitudeA = Math.sqrt(Math.multiply(vectorA, vectorA));
-    const magnitudeB = Math.sqrt(Math.multiply(vectorB, vectorB));
+    const magnitudeA = Math.sqrt(vectorA * vectorA);
+    const magnitudeB = Math.sqrt(vectorB * vectorB);
     const similarity = dotProduct / (magnitudeA * magnitudeB);
     return similarity;
 }
