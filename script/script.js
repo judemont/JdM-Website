@@ -32,24 +32,48 @@ function getAvailableQuestionsString() {
   return available_questions;
 }
 
-function findAnswer(q) {
-  q = q.toLowerCase();
-  let matchingQuestion = Object.keys(me).find((question) =>
-    q.includes(question.toLowerCase())
-  );
-  if (matchingQuestion) {
-    return me[matchingQuestion];
+function calculateCosineSimilarity(vectorA, vectorB) {
+    const dotProduct = math.multiply(vectorA, vectorB);
+    const magnitudeA = math.sqrt(math.multiply(vectorA, vectorA));
+    const magnitudeB = math.sqrt(math.multiply(vectorB, vectorB));
+    const similarity = math.divide(dotProduct, math.multiply(magnitudeA, magnitudeB));
+    return similarity;
+}
+  
+function findAnswer(userQuestion) {
+    let bestSimilarity = -1;
+    let bestAnswer = "";
+  
+    for (let i = 0; i < Object.keys(me).length; i++) {
+      const question = Object.keys(me)[i];
+      const answer = me[question];
+  
+      // Prétraitement des questions et des réponses
+  
+      // Calcul de la similarité cosinus
+      const similarity = calculateCosineSimilarity(preprocessedUserQuestion, preprocessedQuestion);
+  
+      if (similarity > bestSimilarity) {
+        bestSimilarity = similarity;
+        bestAnswer = answer;
+      }
+    }
+  
+    return bestAnswer;
   }
-  return "Did you mean : " + getAvailableQuestionsString() + " ?";
-}
-
-function getUserMessage() {
-  let messageContent = userInput.value;
-  addMessage("<b>You:</b> " + messageContent);
-  let answer = findAnswer(messageContent);
-  addMessage("<b>JdM:</b> " + answer, 1000);
-  userInput.value = "";
-}
+  
+  // Utilisation de l'algorithme de similarité cosinus pour trouver la meilleure réponse
+  function getUserMessage() {
+    let messageContent = userInput.value;
+    addMessage("<b>You:</b> " + messageContent);
+    
+    // Prétraitement de la question de l'utilisateur
+  
+    let answer = findAnswerUsingCosineSimilarity(preprocessedUserQuestion);
+    addMessage("<b>JdM:</b> " + answer, 1000);
+    userInput.value = "";
+  }
+  
 
 function keyPressedInput(event) {
   if (event.key == "Enter") {
