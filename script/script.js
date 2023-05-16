@@ -52,7 +52,9 @@ function findAnswer(userQuestion) {
   
       // Calcul de la similarité cosinus
       const similarity = calculateCosineSimilarity(question, answer);
-  
+        console.log(question)
+        console.log(answer)
+        console.log(similarity)
       if (similarity > bestSimilarity) {
         bestSimilarity = similarity;
         bestAnswer = answer;
