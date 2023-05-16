@@ -63,13 +63,13 @@ function findAnswer(userQuestion) {
   }
   
   // Utilisation de l'algorithme de similarité cosinus pour trouver la meilleure réponse
-  function getUserMessage() {
+function getUserMessage() {
     let messageContent = userInput.value;
     addMessage("<b>You:</b> " + messageContent);
     
     // Prétraitement de la question de l'utilisateur
   
-    let answer = findAnswer(preprocessedUserQuestion);
+    let answer = findAnswer(messageContent.toLowerCase());
     addMessage("<b>JdM:</b> " + answer, 1000);
     userInput.value = "";
   }
