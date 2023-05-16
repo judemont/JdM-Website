@@ -33,7 +33,7 @@ function getAvailableQuestionsString() {
 }
 
 function calculateCosineSimilarity(sentence1, sentence2) {
-    // Fonction pour convertir une phrase en vecteur de mots
+
     function sentenceToVector(sentence) {
       const words = sentence.toLowerCase().split(" ");
       const wordCount = {};
@@ -49,21 +49,19 @@ function calculateCosineSimilarity(sentence1, sentence2) {
       return wordCount;
     }
     
-    // Convertir les phrases en vecteurs de mots
+
     const vector1 = sentenceToVector(sentence1);
     const vector2 = sentenceToVector(sentence2);
     
-    // Obtenir tous les mots uniques des deux phrases
+ 
     const uniqueWords = new Set([...Object.keys(vector1), ...Object.keys(vector2)]);
     
-    // Calculer les produits scalaires des vecteurs
     let dotProduct = 0;
     
     for (const word of uniqueWords) {
       dotProduct += (vector1[word] || 0) * (vector2[word] || 0);
     }
-    
-    // Calculer les magnitudes des vecteurs
+  
     let magnitude1 = 0;
     
     for (const count of Object.values(vector1)) {
@@ -80,7 +78,7 @@ function calculateCosineSimilarity(sentence1, sentence2) {
     
     magnitude2 = Math.sqrt(magnitude2);
     
-    // Calculer la similarité cosinus
+
     const cosineSimilarity = dotProduct / (magnitude1 * magnitude2);
     
     return cosineSimilarity;
@@ -93,9 +91,7 @@ function findAnswer(userQuestion) {
     for (let i = 0; i < Object.keys(me).length; i++) {
       const question = Object.keys(me)[i];
   
-      // Prétraitement des questions et des réponses
-  
-      // Calcul de la similarité cosinus
+
       const similarity = calculateCosineSimilarity(userQuestion, question);
         console.log(userQuestion)
         console.log(question)
@@ -109,12 +105,10 @@ function findAnswer(userQuestion) {
     return bestAnswer;
   }
   
-  // Utilisation de l'algorithme de similarité cosinus pour trouver la meilleure réponse
 function getUserMessage() {
     let messageContent = userInput.value;
     addMessage("<b>You:</b> " + messageContent);
     
-    // Prétraitement de la userQuestion de l'utilisateur
   
     let question = findAnswer(messageContent.toLowerCase());
     addMessage("<b>JdM:</b> " + question, 1000);
