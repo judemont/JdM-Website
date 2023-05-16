@@ -51,7 +51,7 @@ function findAnswer(userQuestion) {
       // Prétraitement des questions et des réponses
   
       // Calcul de la similarité cosinus
-      const similarity = calculateCosineSimilarity(preprocessedUserQuestion, preprocessedQuestion);
+      const similarity = calculateCosineSimilarity(question, answer);
   
       if (similarity > bestSimilarity) {
         bestSimilarity = similarity;
