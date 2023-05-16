@@ -32,12 +32,58 @@ function getAvailableQuestionsString() {
   return available_questions;
 }
 
-function calculateCosineSimilarity(vectorA, vectorB) {
-    const dotProduct = vectorA * vectorB;
-    const magnitudeA = Math.sqrt(vectorA * vectorA);
-    const magnitudeB = Math.sqrt(vectorB * vectorB);
-    const similarity = dotProduct / (magnitudeA * magnitudeB);
-    return similarity;
+function calculateCosineSimilarity(sentence1, sentence2) {
+    // Fonction pour convertir une phrase en vecteur de mots
+    function sentenceToVector(sentence) {
+      const words = sentence.toLowerCase().split(" ");
+      const wordCount = {};
+      
+      for (const word of words) {
+        if (wordCount[word]) {
+          wordCount[word] += 1;
+        } else {
+          wordCount[word] = 1;
+        }
+      }
+      
+      return wordCount;
+    }
+    
+    // Convertir les phrases en vecteurs de mots
+    const vector1 = sentenceToVector(sentence1);
+    const vector2 = sentenceToVector(sentence2);
+    
+    // Obtenir tous les mots uniques des deux phrases
+    const uniqueWords = new Set([...Object.keys(vector1), ...Object.keys(vector2)]);
+    
+    // Calculer les produits scalaires des vecteurs
+    let dotProduct = 0;
+    
+    for (const word of uniqueWords) {
+      dotProduct += (vector1[word] || 0) * (vector2[word] || 0);
+    }
+    
+    // Calculer les magnitudes des vecteurs
+    let magnitude1 = 0;
+    
+    for (const count of Object.values(vector1)) {
+      magnitude1 += count * count;
+    }
+    
+    magnitude1 = Math.sqrt(magnitude1);
+    
+    let magnitude2 = 0;
+    
+    for (const count of Object.values(vector2)) {
+      magnitude2 += count * count;
+    }
+    
+    magnitude2 = Math.sqrt(magnitude2);
+    
+    // Calculer la similarité cosinus
+    const cosineSimilarity = dotProduct / (magnitude1 * magnitude2);
+    
+    return cosineSimilarity;
 }
   
 function findAnswer(userQuestion) {
