@@ -15,5 +15,6 @@ const me = {
         "how can i contact you": "📞 You can contact me with: <br> GitHub : <a href='https://github.com/judemont'>github.com/judemont</a> <br> Telegram : <a href='https://t.me/judemont'>t.me/judemont</a> <br> Discord: judemont#9173 <br> Email : <a href='mailto:julien@rmbi.ch?subject=Hi JdM !'>julien@rmbi.ch</a>",
         "how old are you": "I'm 14.",
         "where are you from": "I live in Switzerland🇨🇭 but I am on the earth🌍, like you!",
-        "feur": "<img src='https://i.pinimg.com/originals/31/e9/ea/31e9ea5a4488d3ed0e10f06298561c28.gif' />"
+        "feur": "<img src='https://i.pinimg.com/originals/31/e9/ea/31e9ea5a4488d3ed0e10f06298561c28.gif' />",
+        "what is the answer of the universe and everything": "42 !!!"
 }
