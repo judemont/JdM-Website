@@ -69,7 +69,7 @@ function findAnswer(userQuestion) {
     
     // Prétraitement de la question de l'utilisateur
   
-    let answer = findAnswerUsingCosineSimilarity(preprocessedUserQuestion);
+    let answer = findAnswer(preprocessedUserQuestion);
     addMessage("<b>JdM:</b> " + answer, 1000);
     userInput.value = "";
   }
