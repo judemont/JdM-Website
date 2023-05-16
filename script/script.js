@@ -91,19 +91,18 @@ function findAnswer(userQuestion) {
     let bestAnswer = "";
   
     for (let i = 0; i < Object.keys(me).length; i++) {
-      const question = userQuestion;
-      const answer = me[Object.keys(me)[i]];
+      const question = Object.keys(me)[i];
   
       // Prétraitement des questions et des réponses
   
       // Calcul de la similarité cosinus
-      const similarity = calculateCosineSimilarity(question, answer);
+      const similarity = calculateCosineSimilarity(userQuestion, question);
+        console.log(userQuestion)
         console.log(question)
-        console.log(answer)
         console.log(similarity)
       if (similarity > bestSimilarity) {
         bestSimilarity = similarity;
-        bestAnswer = answer;
+        bestAnswer = me[question];
       }
     }
 
@@ -115,10 +114,10 @@ function getUserMessage() {
     let messageContent = userInput.value;
     addMessage("<b>You:</b> " + messageContent);
     
-    // Prétraitement de la question de l'utilisateur
+    // Prétraitement de la userQuestion de l'utilisateur
   
-    let answer = findAnswer(messageContent.toLowerCase());
-    addMessage("<b>JdM:</b> " + answer, 1000);
+    let question = findAnswer(messageContent.toLowerCase());
+    addMessage("<b>JdM:</b> " + question, 1000);
     userInput.value = "";
   }
   
