@@ -17,5 +17,6 @@ const me = {
         "where are you from": "I live in Switzerland🇨🇭 but I am on the earth🌍, like you!",
         "feur": "<img src='https://i.pinimg.com/originals/31/e9/ea/31e9ea5a4488d3ed0e10f06298561c28.gif' />",
         "what is the answer of the universe and everything": "42 !!!",
-        "github": "https://github.com/judemont"
+        "github": "https://github.com/judemont",
+        "thanks": "you welcome"
 }
