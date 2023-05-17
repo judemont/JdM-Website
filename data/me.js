@@ -30,6 +30,8 @@ const me = {
         "what is cescosite": "CescoSite is a new free and open source, privacy friendly social network. <br> I am the co-founder of cesco ! <br> <a href='https://github.com/cesco'>CESCO ON GITHUB</a>",
         "what is the goal of the life": "<b>42</b>",
         "which search engine do you use": "I use DuckDuckGo.",
-        "which web browser do you use": "I use Firefox."
+        "which web browser do you use": "I use Firefox.",
+        "what is your favorite programming language": "My favorite programming language is Python.",
+        "favorite movie": "One of my favorite movies is 'The Matrix' and my favorite series is 'Mrs. Robot'.",
 
 }
