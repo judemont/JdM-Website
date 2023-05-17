@@ -23,5 +23,6 @@ const me = {
         "are you stupid": "no !",
         "are you dump": "NO !!",
         "who is dump ?": "NOT ME !!!",
-        "who is stupid": "NOT ME !!!!!!!!"
+        "who is stupid": "NOT ME !!!!!!!!",
+        "are you intelligent": "YES OF COURSE !"
 }
