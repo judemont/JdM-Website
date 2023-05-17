@@ -24,5 +24,6 @@ const me = {
         "are you dump": "NO !!",
         "who is dump ?": "NOT ME !!!",
         "who is stupid": "NOT ME !!!!!!!!",
-        "are you intelligent": "YES OF COURSE !"
+        "are you intelligent": "YES OF COURSE !",
+        "what is your username": "My username is `judemont` or `JdM`..."
 }
