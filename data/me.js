@@ -27,6 +27,9 @@ const me = {
         "are you intelligent": "YES OF COURSE !",
         "what is your username": "My username is `judemont` or `JdM`...",
         "what is cesco": "Cesco is a new free and open source, privacy friendly social network. <br> I am the co-founder of cesco ! <br> <a href='https://github.com/cesco'>CESCO ON GITHUB</a>",
-        "what is cescosite": "CescoSite is a new free and open source, privacy friendly social network. <br> I am the co-founder of cesco ! <br> <a href='https://github.com/cesco'>CESCO ON GITHUB</a>"
+        "what is cescosite": "CescoSite is a new free and open source, privacy friendly social network. <br> I am the co-founder of cesco ! <br> <a href='https://github.com/cesco'>CESCO ON GITHUB</a>",
+        "what is the goal of the life": "<b>42</b>",
+        "which search engine do you use": "I use DuckDuckGo.",
+        "which web browser do you use": "I use Firefox."
 
 }
