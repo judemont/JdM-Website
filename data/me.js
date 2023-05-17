@@ -1,6 +1,6 @@
 const me = {
         "hello": "Hello ! Welcome to my website !",
-        "how are you": "I'm not really JdM, i'm just a basic chatbot, so I don't know, but I hope he is well",
+        "how are you": "I'm find !",
         "who are you": "👋 Hi! I am JdM or Judemont. I'm 14 years old and I love programming awesome projects to <b>improve myself</b> 🚀.",
         "what programming languages do you know": "💻 I know mostly Python and JavaScript but I also do PHP, TypeScript, HTML, and CSS.",
         "what project are you currently working on": "🔨 Currently, I am working a lot on a new open-source social network: <a href='https://github.com/asterjdm/cesco'>Cesco</a>. But I also work on a lot of other projects, you can see them on <a href='https://github.com/judemont'>my GitHub</a> 🌟",
@@ -36,5 +36,5 @@ const me = {
         "what inspires you": "I'm inspired by innovative technologies and the desire to make a positive impact on the world.",
         "what are your future goals": "Some of my future goals include becoming a software engineer and contributing to open-source projects.",
         "what is your favorite quote": "One of my favorite quotes is 'The only way to do great work is to love what you do.' - Steve Jobs",
-        
+        "speak me about you": "👋 Hi! I am JdM or Judemont. I'm 14 years old and I love programming awesome projects to <b>improve myself</b> 🚀.",
 }
