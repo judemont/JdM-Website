@@ -1,7 +1,7 @@
 
-
+var elem = document.documentElement;
 function openFullScreen() {
-    let elem = document.documentElement;
+    
   
     if (!document.fullscreenElement) {
       elem.requestFullscreen().catch((err) => {
