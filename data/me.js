@@ -35,5 +35,6 @@ const me = {
         "favorite movie": "One of my favorite movies is 'The Matrix' and my favorite series is 'Mrs. Robot'.",
         "what inspires you": "I'm inspired by innovative technologies and the desire to make a positive impact on the world.",
         "what are your future goals": "Some of my future goals include becoming a software engineer and contributing to open-source projects.",
+        "what is your favorite quote": "One of my favorite quotes is 'The only way to do great work is to love what you do.' - Steve Jobs",
         
 }
