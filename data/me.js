@@ -24,6 +24,7 @@ const me = {
         "are you dump": "NO !!",
         "who is dump ?": "NOT ME !!!",
         "who is stupid": "NOT ME !!!!!!!!",
+        "42": "THE ANSWER TO EVERYTHING !!",
         "are you intelligent": "YES OF COURSE !",
         "what is your username": "My username is `judemont` or `JdM`...",
         "what is cesco": "Cesco is a new free and open source, privacy friendly social network. <br> I am the co-founder of cesco ! <br> <a href='https://github.com/cesco'>CESCO ON GITHUB</a>",
