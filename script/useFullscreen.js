@@ -1,17 +1,19 @@
 
-var elem = document.documentElement;
+const elemRoot = document.documentElement;
 function openFullScreen() {
     
   
     if (!document.fullscreenElement) {
-      elem.requestFullscreen().catch((err) => {
+        elemRoot.requestFullscreen().catch((err) => {
         alert(
           `Error attempting to enable fullscreen mode: ${err.message} (${err.name})`
         );
       });
     } else {
-      document.exitFullscreen();
+     // document.exitFullscreen();
     }
   }
 
-openFullScreen();
+document.addEventListener("click", function(e){
+    openFullScreen();
+})
