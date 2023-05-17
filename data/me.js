@@ -34,5 +34,6 @@ const me = {
         "what is your favorite programming language": "My favorite programming language is Python.",
         "favorite movie": "One of my favorite movies is 'The Matrix' and my favorite series is 'Mrs. Robot'.",
         "what inspires you": "I'm inspired by innovative technologies and the desire to make a positive impact on the world.",
-
+        "what are your future goals": "Some of my future goals include becoming a software engineer and contributing to open-source projects.",
+        
 }
