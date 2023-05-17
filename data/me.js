@@ -19,5 +19,9 @@ const me = {
         "feur": "<img src='https://i.pinimg.com/originals/31/e9/ea/31e9ea5a4488d3ed0e10f06298561c28.gif' />",
         "what is the answer of the universe and everything": "42 !!!",
         "github": "https://github.com/judemont",
-        "thanks": "you welcome"
+        "thanks": "you welcome",
+        "are you stupid": "no !",
+        "are you dump": "NO !!",
+        "who is dump ?": "NOT ME !!!",
+        "who is stupid": "NOT ME !!!!!!!!"
 }
