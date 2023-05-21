@@ -40,5 +40,6 @@ const me = {
         "what is your favorite quote": "One of my favorite quotes is 'The only way to do great work is to love what you do.' - Steve Jobs",
         "speak me about you": "👋 Hi! I am JdM or Judemont. I'm 14 years old and I love programming awesome projects to <b>improve myself</b> 🚀.",
         "your website is cool/awesome/nice/good": "I know, you can like it on github",
-        "are you a genius": "Sure !"
+        "are you a genius": "Sure !",
+        "how many screens do you have": "I have a computer with 3 screens"
 }
