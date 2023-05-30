@@ -30,7 +30,7 @@ const me = {
         "cesco": "Cesco is a new free and open source, privacy friendly social network. <br> I am the co-founder of cesco ! <br> <a href='https://github.com/cesco'>CESCO ON GITHUB</a>",
         "cescosite": "CescoSite is a new free and open source, privacy friendly social network. <br> I am the co-founder of cesco ! <br> <a href='https://github.com/cesco'>CESCO ON GITHUB</a>",
         "goal life": "<b>42</b>",
-        "search engine": "I use DuckDuckGo.",
+        "search engine": "I use an open source privacy search engine that I co-created : <a href='https://cosmosearch.vercel.app'>CosmosSearch</a>",
         "web browser ": "I use Firefox.",
         "favorite programming language": "My favorite programming language is Python.",
         "favorite movie": "One of my favorite movies is 'The Matrix' and my favorite series is 'Mrs. Robot'.",
