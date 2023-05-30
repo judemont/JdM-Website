@@ -1,7 +1,7 @@
 const me = {
         "hello": "Hello ! Welcome to my website !",
-        "how are you": "I'm find !",
-        "who are you": "👋 Hi! I am JdM or Judemont. I'm 14 years old and I love programming awesome projects to <b>improve myself</b> 🚀.",
+        "how": "I'm find !",
+        "who": "👋 Hi! I am JdM or Judemont. I'm 14 years old and I love programming awesome projects to <b>improve myself</b> 🚀.",
         "programming languages know": "💻 I know mostly Python and JavaScript but I also do PHP, TypeScript, HTML, and CSS.",
         "project projects": "🔨 Currently, I am working a lot on a new open-source social network: <a href='https://github.com/asterjdm/cesco'>Cesco</a>. But I also work on a lot of other projects like <a href=https://github.com/asterjdm/cosmos>Cosmos Search</a> a new privacy friendly simple Metasearch engine based on google results. .You can see them on <a href='https://github.com/judemont'>my GitHub</a> 🌟",
         "operating system": "I use ubuntu (linux)🐧🐧.",
