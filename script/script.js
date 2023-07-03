@@ -8,7 +8,7 @@ function MessageComponent(message) {
   const messageText = document.createElement("p");
   messageText.setAttribute("class", "messageText");
   // messageText.innerHTML = message; --> cette ligne creer une faille de sécurité (XSS) remplace la par messageText.textContent , voici un payload qui pourrais marcher si non modifier : <img src="x" onerror="alert('XSS')" />
-  messageText.textContent = message;
+  messageText.innerText = message;
 
   messageDiv.appendChild(messageText);
   return messageDiv;
