@@ -34,6 +34,7 @@ const ITsentences = [
     "Programmers see the world in binary.",
     "Coding is the key to unlocking endless possibilities.",
     "Nothing is impossible when you are a programmer !",
+    "Be "
 ];
 
 let interval;
