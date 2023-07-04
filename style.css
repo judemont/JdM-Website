@@ -7,10 +7,11 @@ body {
     padding: 0;
     height: 1000px;
     overflow-y: scroll;
-    background-image: url('./images/technology-background.jpg');
+    background-image: url('./images/fractal.jpg');
     background-size: 105%;
     background-position: 50%;
-    animation: moveBackground 2s ease-in-out infinite alternate;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--textColor)
 }
 
@@ -41,17 +42,7 @@ body {
     }
 }
 
-@keyframes moveBackground {
-    0% {
-        background-position: 0%;
-    }
-    50% {
-        background-position: 100%;
-    }
-    100%{
-        background-position: 0%;
-    }
-}
+
 
 .profile_div{
     text-align: center;
