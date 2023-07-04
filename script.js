@@ -12,7 +12,27 @@ const ITsentences = [
     "Code never lies, comments sometimes do.",
     "Programming is the future we're building.",
     "Linux is not just an operating system, it's a philosophy.",
-    "Code better every day, be better every day."
+    "Code better every day, be better every day.",
+    "Coding is my superpower.",
+    "The best error message is the one that never appears.",
+    "Code is the poetry of a developer.",
+    "The future belongs to those who code.",
+    "Debugging is like being the detective in a crime movie where you are also the murderer.",
+    "Coding is not just about solving problems, it's about creating possibilities.",
+    "Programmers don't byte, they nibble a bit.",
+    "Coding is the art of thinking clearly, step by step.",
+    "Code is like humor, not everyone gets it.",
+    "Real programmers count from 0.",
+    "Coding is the closest thing we have to a superpower.",
+    "The best code is the one that never needs to be written.",
+    "Coding is the language of the future, and we're all its poets.",
+    "With great code comes great responsibility.",
+    "Programmers make the impossible possible.",
+    "Coding is not just a job, it's a way of life.",
+    "In a world full of bugs, I'm a debugger.",
+    "Coding is the ultimate form of self-expression.",
+    "Programmers see the world in binary.",
+    "Coding is the key to unlocking endless possibilities.",
 ];
 
 let interval;
