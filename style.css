@@ -1,0 +1,65 @@
+*{
+    --textColor: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+    overflow-y: scroll;
+    background-image: url('./images/technology-background.jpg');
+    background-size: 100%;
+    background-position: 50%;
+    color: var(--textColor)
+}
+
+.titleh1{
+    font-size: 70px;
+    text-align: center;
+    position: -webkit-sticky;
+    margin-top: 5%;
+    animation: colorChange 2s linear infinite alternate;
+}
+
+.description{
+    font-size: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 4rem;
+    margin-top: 0%;
+    text-align: center;
+}
+
+@keyframes colorChange {
+    from {
+        color: rgb(122, 122, 122);
+    }
+    to {
+        color: var(--textColor);
+    }
+}
+
+.profile_div{
+    text-align: center;
+}
+
+.profile_img{
+    width: 40vh;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 25px;
+    cursor: pointer;
+
+
+    transition: transform 1s;
+}
+
+.profile_img:hover{
+    transform: scale(1.1);
+}
+
+#infinitSpace{
+    position: absolute;
+    margin-top: 10%;
+}
