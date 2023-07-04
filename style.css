@@ -26,7 +26,8 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    margin-top: 15%;
+
+    margin-top: 6%;
     text-align: center;
 }
 
@@ -37,4 +38,24 @@ body {
     to {
         color: var(--textColor);
     }
+}
+
+.profile_div{
+    text-align: center;
+}
+
+.profile_img{
+    width: 40vh;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 25px;
+    cursor: pointer;
+
+
+    transition: transform 1s;
+}
+
+.profile_img:hover{
+    transform: scale(1.1);
 }
