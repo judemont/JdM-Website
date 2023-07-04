@@ -10,6 +10,7 @@ body {
     background-image: url('./images/technology-background.jpg');
     background-size: 105%;
     background-position: 50%;
+    animation: moveBackground 2s ease-in-out infinite alternate;
     color: var(--textColor)
 }
 
@@ -18,7 +19,7 @@ body {
     text-align: center;
     position: -webkit-sticky;
     margin-top: 5%;
-    animation: colorChange 2s linear infinite alternate;
+    animation: colorChange 2s linear infinite alternate-re;
 }
 
 .description{
@@ -37,6 +38,18 @@ body {
     }
     to {
         color: var(--textColor);
+    }
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
     }
 }
 
