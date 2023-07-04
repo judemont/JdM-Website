@@ -8,7 +8,7 @@ body {
     height: 1000px;
     overflow-y: scroll;
     background-image: url('./images/technology-background.jpg');
-    background-size: cover;
+    background-size: 100%;
     background-position: 50%;
     color: var(--textColor)
 }
