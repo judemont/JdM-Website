@@ -33,6 +33,7 @@ const ITsentences = [
     "Coding is the ultimate form of self-expression.",
     "Programmers see the world in binary.",
     "Coding is the key to unlocking endless possibilities.",
+    "Nothing is impossible when you are a programmer !"
 ];
 
 let interval;
