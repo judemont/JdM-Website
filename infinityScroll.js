@@ -1,9 +1,9 @@
-var height = 0
+var height = 2000
 window.addEventListener("scroll", function() {
-    let infinitSpace = document.getElementById("infinitSpace");
+    let infinitSpace = document.getElementById("body");
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    let heightToAdd = height + scrollTop + 100
+    let heightToAdd = height + scrollTop + 300
     infinitSpace.style.height = heightToAdd + "px";
 });
   

@@ -5,10 +5,10 @@
 body {
     margin: 0;
     padding: 0;
-    height: 2000px;
+    height: 1000px;
     overflow-y: scroll;
     background-image: url('./images/technology-background.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: 50%;
     color: var(--textColor)
 }
@@ -25,9 +25,8 @@ body {
     font-size: 50px;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
-
-    margin-top: 6%;
+    top: 4rem;
+    margin-top: 0%;
     text-align: center;
 }
 
@@ -60,3 +59,7 @@ body {
     transform: scale(1.1);
 }
 
+#infinitSpace{
+    position: absolute;
+    margin-top: 10%;
+}
