@@ -28,6 +28,7 @@ body {
     top: 4rem;
     margin-top: 0%;
     text-align: center;
+    overflow-x: auto;
 }
 
 @keyframes colorChange {
