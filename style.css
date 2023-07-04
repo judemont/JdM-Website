@@ -1,0 +1,31 @@
+*{
+    --textColor: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 2000px;
+    overflow-y: scroll;
+    background-image: url('./images/technology-background.jpg');
+    background-size: contain;
+    background-position: 50%;
+    color: var(--textColor)
+}
+
+.titleh1{
+    font-size: 70px;
+    text-align: center;
+    position: -webkit-sticky;
+    margin-top: 5%;
+    animation: colorChange 2s linear infinite alternate;
+}
+
+@keyframes colorChange {
+    from {
+        color: rgb(122, 122, 122);
+    }
+    to {
+        color: var(--textColor);
+    }
+}
