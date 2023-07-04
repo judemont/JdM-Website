@@ -21,6 +21,14 @@ body {
     animation: colorChange 2s linear infinite alternate;
 }
 
+.description{
+    font-size: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    margin-top: 50%;
+}
+
 @keyframes colorChange {
     from {
         color: rgb(122, 122, 122);
