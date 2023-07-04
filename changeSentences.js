@@ -33,7 +33,7 @@ const ITsentences = [
     "Coding is the ultimate form of self-expression.",
     "Programmers see the world in binary.",
     "Coding is the key to unlocking endless possibilities.",
-    "Nothing is impossible when you are a programmer !"
+    "Nothing is impossible when you are a programmer !",
 ];
 
 let interval;
@@ -46,7 +46,7 @@ function changeSentence(sentence, place, sentences) {
   clearInterval(interval);
   place.innerText = sentence;
   let rand = getRandomInt(sentences.length);
-  let intervalDelay = sentence.length * 50;
+  let intervalDelay = sentence.length * 60;
   interval = setInterval(changeSentence, intervalDelay, sentences[rand], place, sentences);
 }
 
