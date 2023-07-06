@@ -27,7 +27,18 @@ body {
     transform: rotate(-30deg);
 }
 
+#dpi {
+    height: 1in;
+    left: -100%;
+    position: absolute;
+    top: -100%;
+    width: 1in;
+}
 
+.deep{
+    position: fixed;
+    top: 90%;
+}
 
 .titleh1{
     font-size: 70px;
