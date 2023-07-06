@@ -38,6 +38,7 @@ body {
 .deep{
     position: fixed;
     top: 90%;
+    left: 50%;
 }
 
 .titleh1{
