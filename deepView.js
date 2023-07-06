@@ -1,8 +1,13 @@
 const dpi = document.getElementById("dpi").offsetHeight;
 const deepEl = document.getElementById("deep")
 document.addEventListener("scroll", function(){
-    let deep = px2m(window.scrollY, dpi)
-    deepEl.innerText = roundUp(deep, 1)  + "M"
+    let deep = roundUp(px2m(window.scrollY, dpi), 1)
+    if(deep <= 0){
+        deepEl.innerText = ""
+    }else{
+        deepEl.innerText = deep + "M"
+    }
+
 })
 
 function px2m(px, dpi) {
