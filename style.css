@@ -7,13 +7,27 @@ body {
     padding: 0;
     height: 1000px;
     overflow-y: scroll;
+    color: var(--textColor);
+}
+
+.background{
+    content: "";
+    position: absolute;
+    width: 250%;
+    height: 250%;
+    top: -75%;
+    left: -75%;
+    z-index: -1;
     background-image: url('./images/fractal.jpg');
     background-size: 105%;
     background-position: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: var(--textColor)
+    position: fixed;
+    transform: rotate(-30deg);
 }
+
+
 
 .titleh1{
     font-size: 70px;
