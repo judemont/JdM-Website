@@ -35,10 +35,27 @@ body {
     width: 1in;
 }
 
+.deepDiv{
+}
 .deep{
     position: fixed;
     top: 90%;
+}
+.social {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
     left: 50%;
+    transform: translateX(-50%);
+}
+
+.social_logo{
+    padding: 20px;
+    width: 70px;
+    cursor:pointer;
+    
 }
 
 .titleh1{
