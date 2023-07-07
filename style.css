@@ -54,7 +54,7 @@ body {
 .social_logo{
     padding: 10px;
     margin: 10px;
-    width: 70px;
+    width: 7vh;
     cursor:pointer;
     transition: transform .5s;
     border-radius: 30px;
