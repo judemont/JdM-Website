@@ -56,12 +56,12 @@ body {
     margin: 10px;
     width: 70px;
     cursor:pointer;
-    transition: transform 1s;
+    transition: transform .5s;
     
 }
 
 .social_logo:hover{
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 .titleh1{
