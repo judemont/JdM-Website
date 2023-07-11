@@ -47,7 +47,7 @@ function changeSentence(sentence, place, sentences) {
   clearInterval(interval);
   place.innerText = sentence;
   let rand = getRandomInt(sentences.length);
-  let intervalDelay = sentence.length * 60;
+  let intervalDelay = sentence.length * 80;
   interval = setInterval(changeSentence, intervalDelay, sentences[rand], place, sentences);
 }
 
