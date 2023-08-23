@@ -6,6 +6,7 @@
 body{
     background-color: #020e13;
     margin: 0;
+    color: #0099ff;
 }
 
 header {
@@ -23,11 +24,15 @@ header {
     padding: 2rem;
     height: auto;
     max-height: 200px; /* Ajuste cette valeur selon ta préférence */
-    margin: 0;
+    width: 20%; /* Ajuste la largeur comme souhaité */
+    margin: 0 auto; /* Ajoute cette ligne pour centrer horizontalement */
     box-sizing: border-box;
 }
 
+
+
 .mainTitle {
+    color: #020e13;
     font-family: 'Oswald-Bold', sans-serif;
     font-size: 8vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -36,6 +41,10 @@ header {
 .char {
     transform: translateY(200px);
     transition: transform 1s;
+}
+
+.subtitle {
+    text-align: center;
 }
 
 @media (max-width: 768px) {
