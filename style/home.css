@@ -6,13 +6,12 @@ header{
 
 h1{
     font-size: 7rem;
-    text-transform: uppercase;
     font-family: 'Bebas Neue';
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    line-height: 5.9rem;
+    line-height: 8rem;
 }
 
 .char{
-    transform: translateY(115px);
-    transition: transform .5s;
+    transform: translateY(125px);
+    transition: transform 1s;
 }
