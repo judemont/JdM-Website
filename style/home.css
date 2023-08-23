@@ -17,6 +17,6 @@ h1 {
 }
 
 .char {
-    transform: translateY(185px);
+    transform: translateY(200px);
     transition: transform 1s;
 }
