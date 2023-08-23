@@ -1,23 +1,22 @@
 @font-face { 
     font-family: "Oswald-Bold";  
-    src: url("../fonts/Oswald-Bold.ttf"); 
+    src: url("../fonts/Oswald-Bold.ttf") format('truetype');
 }
 
-header{
+header {
     display: grid;
     place-content: center;
     height: 100vh;
 }
 
-h1{
+h1 {
     font-family: 'Oswald-Bold', sans-serif;
-    font-size: 7rem;
-    font-family: 'Bebas Neue';
+    font-size: 10rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    line-height: 8rem;
+    line-height: 13rem;
 }
 
-.char{
-    transform: translateY(125px);
+.char {
+    transform: translateY(185px);
     transition: transform 1s;
 }
