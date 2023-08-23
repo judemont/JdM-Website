@@ -3,13 +3,18 @@
     src: url("../fonts/Oswald-Bold.ttf") format('truetype');
 }
 
+body{
+    background-color: #020e13;
+}
+
 header {
     display: grid;
     place-content: center;
     height: 100vh;
 }
 
-h1 {
+.mainTitle {
+    background-color: aquamarine;
     font-family: 'Oswald-Bold', sans-serif;
     font-size: 10rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
