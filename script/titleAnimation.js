@@ -6,8 +6,8 @@ gsap.to(".char", {
     delay: 1,
     onComplete: () => {
         gsap.to("#mainTitle", {
-            rotation: 720, 
-            duration: 1.5,
+            rotation: 360, 
+            duration: 1.7,
             ease: "power2.inOut"
         });
     }

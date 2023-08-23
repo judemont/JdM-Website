@@ -14,20 +14,22 @@ header {
 }
 
 .titleDiv {
+    border-radius: 25px;
     background-color: aquamarine;
     display: flex;
-    align-items: flex-end;
-    padding: 10px;
-    height: 100%;
+    align-items: center;
+    padding: 50px;
+    height: 200px; /* Ajuste cette valeur selon ta préférence */
     margin: 0;
 }
+
 
 
 .mainTitle {
     font-family: 'Oswald-Bold', sans-serif;
     font-size: 10rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    line-height: 13rem;
+    /* line-height: 13rem; */
 }
 
 .char {
