@@ -5,6 +5,7 @@
 
 body{
     background-color: #020e13;
+    margin: 0;
 }
 
 header {
@@ -18,21 +19,32 @@ header {
     background-color: aquamarine;
     display: flex;
     align-items: center;
-    padding: 50px;
-    height: 200px; /* Ajuste cette valeur selon ta préférence */
+    justify-content: center;
+    padding: 2rem;
+    height: auto;
+    max-height: 200px; /* Ajuste cette valeur selon ta préférence */
     margin: 0;
+    box-sizing: border-box;
 }
-
-
 
 .mainTitle {
     font-family: 'Oswald-Bold', sans-serif;
-    font-size: 10rem;
+    font-size: 8vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    /* line-height: 13rem; */
 }
 
 .char {
     transform: translateY(200px);
     transition: transform 1s;
+}
+
+@media (max-width: 768px) {
+    .titleDiv {
+        padding: 1rem;
+        max-height: 150px;
+    }
+
+    .mainTitle {
+        font-size: 10vw;
+    }
 }
