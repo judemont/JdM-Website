@@ -1,3 +1,8 @@
+@font-face { 
+    font-family: "Oswald-Bold";  
+    src: url("../fonts/Oswald-Bold.ttf"); 
+}
+
 header{
     display: grid;
     place-content: center;
@@ -5,6 +10,7 @@ header{
 }
 
 h1{
+    font-family: 'Oswald-Bold', sans-serif;
     font-size: 7rem;
     font-family: 'Bebas Neue';
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
