@@ -1,4 +1,4 @@
-const myText = new SplitType('#my-text')
+const myText = new SplitType('#mainTitle')
         
 gsap.to(".char",{
     y:0,
