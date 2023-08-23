@@ -5,7 +5,7 @@ gsap.to(".char", {
     stagger: 1,
     delay: 1,
     onComplete: () => {
-        gsap.to("#mainTitle", {
+        gsap.to(".titleDiv", {
             rotation: 360, 
             duration: 1.7,
             ease: "power2.inOut"
