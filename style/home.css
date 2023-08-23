@@ -1,0 +1,38 @@
+@font-face { 
+    font-family: "Oswald-Bold";  
+    src: url("../fonts/Oswald-Bold.ttf") format('truetype');
+}
+
+body{
+    background-color: #020e13;
+}
+
+header {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.titleDiv {
+    border-radius: 25px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    height: 200px; /* Ajuste cette valeur selon ta préférence */
+    margin: 0;
+}
+
+
+
+.mainTitle {
+    font-family: 'Oswald-Bold', sans-serif;
+    font-size: 10rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    /* line-height: 13rem; */
+}
+
+.char {
+    transform: translateY(200px);
+    transition: transform 1s;
+}
