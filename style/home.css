@@ -12,10 +12,8 @@ body {
 }
 
 header {
-    margin: 0 auto;
-    display: grid;
+    margin: 50px auto;
     place-content: center;
-    height: 100vh;
 }
 
 .titleDiv {
@@ -28,7 +26,7 @@ header {
     height: auto;
     max-height: 200px;
     width: 20%;
-    margin: 50% auto 0;
+    margin: 0 auto 0;
     box-sizing: border-box;
 }
 
@@ -47,7 +45,7 @@ header {
 }
 
 .subtitle {
-    
+    margin-top: 100px;
 }
 
 .sectionTitle{
@@ -71,8 +69,21 @@ header {
 .infos {
     position: relative;
     margin-top: 100px; 
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
+    gap: 20px; /* Espacement entre les colonnes */
+    align-items: center; /* Centrer verticalement le contenu */
+    margin-bottom: 40px; /* Espacement entre les groupes d'info */
+
 }
 
+.sectionIcons {
+    display: flex;
+    flex-wrap: wrap; /* Afficher les icônes par lignes de deux */
+    justify-content: center; /* Centrer horizontalement les icônes */
+    gap: 20px; /* Espacement entre les icônes */
+}
 
 @media (max-width: 768px) {
     .titleDiv {
