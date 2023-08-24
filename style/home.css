@@ -31,7 +31,6 @@ header {
 }
 
 
-
 .mainTitle {
     color: #020e13;
     font-family: 'Oswald-Bold', sans-serif;
@@ -79,10 +78,7 @@ header {
 }
 
 .sectionIcons {
-    display: flex;
-    flex-wrap: wrap; /* Afficher les icônes par lignes de deux */
-    justify-content: center; /* Centrer horizontalement les icônes */
-    gap: 20px; /* Espacement entre les icônes */
+
 }
 
 @media (max-width: 768px) {
