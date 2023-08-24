@@ -3,14 +3,16 @@
     src: url("../fonts/Oswald-Bold.ttf") format('truetype');
 }
 
-body{
+body {
     background-color: #020e13;
     margin: 0;
     color: #0099ff;
     text-align: center;
+    overflow-y: scroll; 
 }
 
 header {
+    margin: 0 auto;
     display: grid;
     place-content: center;
     height: 100vh;
@@ -25,8 +27,8 @@ header {
     padding: 2rem;
     height: auto;
     max-height: 200px;
-    width: 20%; 
-    margin: 0 auto;
+    width: 20%;
+    margin: 200px auto 0;
     box-sizing: border-box;
 }
 
@@ -53,14 +55,23 @@ header {
     font-size: 2.5rem;
 }
 
-.skillsIcon{
+.icon{
     max-width: 60px;
 }
 
-.skills {
-    
-    margin-top: 100px;
+.icon:hover{
+    transform: scale(1.2);
 }
+
+.icon{
+    transition: transform 0.1s;
+}
+
+.infos {
+    position: relative;
+    margin-top: 100px; 
+}
+
 
 @media (max-width: 768px) {
     .titleDiv {
