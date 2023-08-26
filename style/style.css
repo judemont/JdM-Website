@@ -17,6 +17,10 @@ header {
     place-content: center;
 }
 
+h1{
+    font-size: 5vw;
+}
+
 .titleDiv {
     border-radius: 25px;
     background-color: aquamarine;
@@ -32,7 +36,7 @@ header {
 }
 
 
-.mainTitle {
+.homeTitle {
     color: #020e13;
     font-size: 8vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -104,6 +108,21 @@ header {
     transition: 400ms;
 }
 
+.contactArea{
+    width: 345px; 
+    height: 186px;
+
+    border-radius: 10px;
+
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 @media (max-width: 768px) {
     .titleDiv {
         padding: 1rem;
@@ -111,7 +130,7 @@ header {
         width: 20vh;
     }
 
-    .mainTitle {
+    .homeTitle {
 
     }
 
