@@ -6,5 +6,10 @@
     $to = "julien@rmbi.ch";
     $subject = "WEBSITE MESSAGE!";
     $message = $_POST["content"];
-    mail($to, $subject, $message);
+    if(mail($to, $subject, $message)){
+        echo "The message was successfully sent";
+        header("location: ../index.html");
+    }else{
+        echo "An error occurred";
+    }
 ?>
