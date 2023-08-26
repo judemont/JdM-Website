@@ -8,6 +8,7 @@ body {
     margin: 0;
     color: #0099ff;
     text-align: center;
+    font-family: 'Oswald-Bold', sans-serif;
     overflow-y: scroll; 
 }
 
@@ -33,7 +34,6 @@ header {
 
 .mainTitle {
     color: #020e13;
-    font-family: 'Oswald-Bold', sans-serif;
     font-size: 8vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
@@ -70,15 +70,38 @@ header {
     margin-top: 100px; 
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
-    gap: 20px; /* Espacement entre les colonnes */
-    align-items: center; /* Centrer verticalement le contenu */
-    margin-bottom: 40px; /* Espacement entre les groupes d'info */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    align-items: center;
+    margin-bottom: 40px;
 
 }
 
 .sectionIcons {
 
+}
+
+
+.pageButton{
+    border-color: #0099ff;
+    color: #0099ff;
+    font-family: 'Oswald-Bold', sans-serif;
+    font-size: large;
+    background-color: transparent;
+    width: 350px ;
+    height: 50px;
+
+    cursor: pointer;
+
+    transition: 400ms;
+}
+
+.pageButton:hover{
+    background-color: #0099ff;
+    color: #020e13;
+    border-color: #b4b4b4;
+
+    transition: 400ms;
 }
 
 @media (max-width: 768px) {

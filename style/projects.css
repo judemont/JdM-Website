@@ -1,0 +1,17 @@
+@font-face { 
+    font-family: "Oswald-Bold";  
+    src: url("../fonts/Oswald-Bold.ttf") format('truetype');
+}
+
+body {
+    background-color: #020e13;
+    margin: 0;
+    color: #0099ff;
+    text-align: center;
+    font-family: 'Oswald-Bold', sans-serif;
+    overflow-y: scroll; 
+}
+
+h1{
+    font-size: 3vw;
+}
