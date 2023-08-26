@@ -1,5 +1,5 @@
 <?php
-    if(!isset($_POST["contactArea"])){
+    if(!isset($_POST["content"])){
         exit();
     }
 
