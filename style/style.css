@@ -66,7 +66,7 @@ h1{
 }
 
 .icon{
-    transition: transform 0.1s;
+    transition: 0.1s;
 }
 
 .infos {
@@ -104,8 +104,6 @@ h1{
     background-color: #0099ff;
     color: #020e13;
     border-color: #b4b4b4;
-
-    transition: 400ms;
 }
 
 .contactArea{
@@ -121,6 +119,26 @@ h1{
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+}
+
+.home {
+    font-size: 5vh;
+    position: absolute;
+    margin: 0;
+    top: 20;
+    left: 30;
+
+    transition: 500ms;
+}
+
+
+.home:hover {
+    transform: scale(1.5);
+}
+
+.footerGithub:hover{
+    transition: 5s;
+    transform: scale(4);
 }
 
 @media (max-width: 768px) {
