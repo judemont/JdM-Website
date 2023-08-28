@@ -136,9 +136,10 @@ h1{
     transform: scale(1.5);
 }
 
-.footerGithub:hover{
-    transition: 5s;
-    transform: scale(4);
+
+.footerGithubText:hover{
+    transition: 15s;
+    transform: scale(100);
 }
 
 @media (max-width: 768px) {
