@@ -142,6 +142,17 @@ h1{
     transform: scale(100);
 }
 
+.profile_img{
+    z-index: -5;
+    opacity: 0.3;
+    position: fixed;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
 @media (max-width: 768px) {
     .titleDiv {
         padding: 1rem;
