@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat-SemiBold.ttf' ) format('truetype');
+
+    font-family: "Oswald";
+    src: url('fonts/Oswald-Bold.ttf' ) format('truetype');
+}
+
 html, body, section {
     block-size: 100%;
     }
@@ -10,6 +18,7 @@ body {
     margin: 0;
     font-family: system-ui, sans-serif;
     /* font-size: 4rem; */
+    font-family: 'Oswald';
 }
 
 section {
@@ -58,4 +67,23 @@ section:nth-of-type(odd) {
     font-style: italic;
     font-weight:900;
     font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.icon{
+    border-radius: 20px;
+    max-width: 60px;
+    padding: 10px;
+    transition: 0.1s;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
+
+.sectionIcons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
