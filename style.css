@@ -13,16 +13,17 @@ body {
 }
 
 section {
+    background-color: rgb(255, 0, 149);
     scroll-snap-align: start;
     scroll-snap-stop: always;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 h1 {
     font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }   
 
 section:nth-of-type(even) {
@@ -33,4 +34,13 @@ section:nth-of-type(even) {
 section:nth-of-type(odd) {
     color: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgb(22, 22, 22), rgb(0, 0, 0));
+}
+
+.profile-img{
+    margin-top: 10px;
+    border-radius: 40%;
+    width: 20%;
+
+    display: block;
+    margin: 0 auto;
 }
