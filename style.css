@@ -23,15 +23,14 @@ section {
 
 h1 {
     font-size: 4rem;
-}
+}   
 
 section:nth-of-type(even) {
     color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(22, 22, 22));
 }
 
 section:nth-of-type(odd) {
-    color: rgb(218, 218, 218);
-    background: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(22, 22, 22), rgb(0, 0, 0));
 }
-
