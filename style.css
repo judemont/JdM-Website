@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat-SemiBold.ttf' ) format('truetype');
+
+    font-family: "Oswald";
+    src: url('fonts/Oswald-Bold.ttf' ) format('truetype');
+}
+
+html, body, section {
+    block-size: 100%;
+    }
+  
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    /* font-size: 4rem; */
+    font-family: 'Oswald';
+}
+
+section {
+    background-color: rgb(255, 0, 149);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flow-root;
+}
+
+h1 {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+section:nth-of-type(even) {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(22, 22, 22));
+}
+
+section:nth-of-type(odd) {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(22, 22, 22), rgb(0, 0, 0));
+}
+
+.profile-img {
+    margin-top: 10px;
+    border-radius: 30%;
+    width: 300px;
+
+    display: block;
+    margin: 0 auto;
+
+    transition: all 0.5s;
+}
+
+.profile-img:hover {
+    border-radius: 50%;
+}
+
+
+
+.description {
+    text-align: center;
+    font-style: italic;
+    font-weight:900;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.icon{
+    border-radius: 20px;
+    max-width: 60px;
+    padding: 10px;
+    transition: 0.1s;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
+
+.sectionIcons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
