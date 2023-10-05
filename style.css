@@ -16,7 +16,7 @@ section {
     background-color: rgb(255, 0, 149);
     scroll-snap-align: start;
     scroll-snap-stop: always;
-
+    display: flow-root;
 }
 
 h1 {
@@ -36,11 +36,26 @@ section:nth-of-type(odd) {
     background: linear-gradient(0deg, rgb(22, 22, 22), rgb(0, 0, 0));
 }
 
-.profile-img{
+.profile-img {
     margin-top: 10px;
-    border-radius: 40%;
-    width: 20%;
+    border-radius: 30%;
+    width: 300px;
 
     display: block;
     margin: 0 auto;
+
+    transition: all 0.5s;
+}
+
+.profile-img:hover {
+    border-radius: 50%;
+}
+
+
+
+.description {
+    text-align: center;
+    font-style: italic;
+    font-weight:900;
+    font-size: 25px;
 }
