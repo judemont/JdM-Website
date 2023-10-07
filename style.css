@@ -19,6 +19,7 @@ body {
     font-family: system-ui, sans-serif;
     /* font-size: 4rem; */
     font-family: 'Oswald';
+    cursor: url("images/cursor.png"), auto;
 }
 
 section {
