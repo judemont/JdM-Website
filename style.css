@@ -103,7 +103,7 @@ section:nth-of-type(odd) {
     overflow-y: scroll;
 }
 
-.project-card{
+.project-card-img{
     margin: 10px;
     padding: 0;
 
@@ -112,7 +112,7 @@ section:nth-of-type(odd) {
     transition: 0.5s;
 }
 
-.project-card:hover {
+.project-card-img:hover {
     transform: scale(1.1);
 }
 
@@ -127,6 +127,6 @@ section:nth-of-type(odd) {
     }
 
     .project-card-img {
-        width: 100%;
+        width: 95%;
     }
 }
