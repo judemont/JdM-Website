@@ -91,13 +91,16 @@ section:nth-of-type(odd) {
     height: 50vh;
     display: block;
     margin: 0 auto;
-    content: url("https://github-readme-stats.vercel.app/api/wakatime?username=judemont&api_domain=wakapi.dev&bg_color=2D3748&title_color=fafafa&icon_color=2F855A&text_color=ffffff&custom_title=My%20Stats%20%F0%9F%9A%80&range=all_time")
+    content: url("https://github-readme-stats.vercel.app/api/wakatime?username=judemont&api_domain=wakapi.dev&bg_color=2D3748&title_color=fafafa&icon_color=2F855A&text_color=ffffff&custom_title=My%20Stats%20%F0%9F%9A%80&range=all_time&layout=compact")
 }
 
 .projects-cards{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: 70vh;
+    width: fit-content;
+    overflow-y: scroll;
 }
 
 .project-card{
@@ -113,12 +116,17 @@ section:nth-of-type(odd) {
     transform: scale(1.1);
 }
 
-@media (min-width:641px){
+@media (max-width:641px){
     .statts-img{
-        content: url("https://github-readme-stats.vercel.app/api/wakatime?username=judemont&api_domain=wakapi.dev&bg_color=2D3748&title_color=fafafa&icon_color=2F855A&text_color=ffffff&custom_title=My%20Stats%20%F0%9F%9A%80&range=all_time&layout=compact")
+        content: url("https://github-readme-stats.vercel.app/api/wakatime?username=judemont&api_domain=wakapi.dev&bg_color=2D3748&title_color=fafafa&icon_color=2F855A&text_color=ffffff&custom_title=My%20Stats%20%F0%9F%9A%80&range=all_time")
     }
 
     .description {
+        letter-spacing:normal;
+        font-size: medium;
+    }
 
+    .project-card-img {
+        width: 100%;
     }
 }
