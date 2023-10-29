@@ -19,11 +19,10 @@ body {
     font-family: system-ui, sans-serif;
     /* font-size: 4rem; */
     font-family: 'Oswald';
-    cursor: url("images/cursor.png"), auto;
+    text-shadow: 0 0 10px #000000, 0 0 20px #0000FF; 
 }
 
 section {
-    background-color: rgb(255, 0, 149);
     scroll-snap-align: start;
     scroll-snap-stop: always;
     display: flow-root;
@@ -36,15 +35,32 @@ h1 {
     justify-content: center;
 }   
 
-section:nth-of-type(even) {
+section:nth-of-type(4n+0) {
     color: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(42, 42, 42));
+    background-image: url("images/bg-2.jpeg");
+    background-size: cover;
 }
 
-section:nth-of-type(odd) {
+
+section:nth-of-type(4n+1) {
     color: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgb(42, 42, 42), rgb(0, 0, 0));
+    background-image: url("images/bg-1.jpg");
+    background-size: cover;
 }
+
+section:nth-of-type(4n+2) {
+    color: rgb(255, 255, 255);
+    background-image: url("images/bg-3.jpeg");
+    background-size: cover;
+}
+
+section:nth-of-type(4n+3) {
+    color: rgb(255, 255, 255);
+    background-image: url("images/bg-4.jpg");
+    background-size: cover;
+}
+
+
 
 .profile-img {
     margin-top: 10px;
