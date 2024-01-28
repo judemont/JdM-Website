@@ -1,132 +1,60 @@
-@font-face {
-    font-family: "Montserrat";
-    src: url('fonts/Montserrat-SemiBold.ttf' ) format('truetype');
-
-    font-family: "Oswald";
-    src: url('fonts/Oswald-Bold.ttf' ) format('truetype');
-}
-
-html, body, section {
-    block-size: 100%;
-}
-  
 html {
-    scroll-snap-type: y mandatory;
-}
+    margin: 0;
+    padding: 0;
+    height: 100%
+}   
 
 body {
     margin: 0;
-    font-family: system-ui, sans-serif;
-    /* font-size: 4rem; */
-    font-family: 'Oswald';
-    cursor: url("images/cursor.png"), auto;
-}
-
-section {
-    background-color: rgb(255, 0, 149);
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    display: flow-root;
-}
-
-h1 {
-    font-size: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}   
-
-section:nth-of-type(even) {
-    color: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(42, 42, 42));
-}
-
-section:nth-of-type(odd) {
-    color: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgb(42, 42, 42), rgb(0, 0, 0));
-}
-
-.profile-img {
-    margin-top: 10px;
-    border-radius: 30%;
-    width: 300px;
-
-    display: block;
-    margin: 0 auto;
-
-    transition: all 0.5s;
-}
-
-.profile-img:hover {
-    border-radius: 50%;
-}
-
-.description {
-    text-align: center;
-    font-style: italic;
-    font-weight:900;
-    font-size: 25px;
-    letter-spacing: 1px;
-}
-
-.icon{
-    border-radius: 20px;
-    max-width: 60px;
-    padding: 10px;
-    transition: 0.1s;
-}
-
-.icon:hover{
-    transform: scale(1.2);
-}
-
-
-.sectionIcons{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.statts-img{
-    height: 50vh;
-    display: block;
-    margin: 0 auto;
-    content: url("https://github-readme-stats.vercel.app/api/wakatime?username=judemont&api_domain=wakapi.dev&bg_color=2D3748&title_color=fafafa&icon_color=2F855A&text_color=ffffff&custom_title=My%20Stats%20%F0%9F%9A%80&range=all_time&layout=compact")
-}
-
-.projects-cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 70vh;
-    width: fit-content;
-    overflow-y: scroll;
-}
-
-.project-card{
-    margin: 10px;
     padding: 0;
-
-    border: 5px ridge black;
-
-    transition: 0.5s;
+    height: 100%;
+    max-height: 100%;
+    float: left;
+    width: 100%;
 }
 
-.project-card:hover {
-    transform: scale(1.1);
+body {
+    background-color: black;
 }
 
-@media (max-width:641px){
-    .statts-img{
-        content: url("https://github-readme-stats.vercel.app/api/wakatime?username=judemont&api_domain=wakapi.dev&bg_color=2D3748&title_color=fafafa&icon_color=2F855A&text_color=ffffff&custom_title=My%20Stats%20%F0%9F%9A%80&range=all_time")
-    }
+.nav {
+    display: flex;
+    justify-content: center;
 
-    .description {
-        letter-spacing:normal;
-        font-size: medium;
-    }
 
-    .project-card-img {
-        width: 100%;
-    }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    font-size: larger;
+    font-weight: bolder ;
+    color: rgb(255, 255, 255);
 }
+
+.nav li {
+    cursor: pointer;
+    display: inline-block;
+    width: fit-content;
+    margin: 25px;
+}
+
+.nav li span {
+    visibility: hidden;
+}
+
+.nav li:hover  {
+    background-color: rgb(21, 255, 0);
+    color: rgb(0, 0, 0);
+}
+
+.nav li:hover span {
+    visibility: visible;
+    background-color: blue !important;
+}
+
+.mainTitle {
+    text-align: center;
+    color: rgb(0, 255, 21);
+    font-size: 50px;
+}
+
