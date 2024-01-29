@@ -3,13 +3,10 @@ const helloWorlds = ["Hello World", "Bonjour le monde", "مرحباً بالعا
 const mainContent = document.getElementById("mainContent");
 
 function displaySection(id) {
-    console.log(id);
-    
-    Array.from(mainContent.getElementsByTagName("div")).forEach(div => {
-        div.style.display = "none";
-    });
+    mainContent.innerHTML = "";
 
-    document.getElementById(id).style.display = "block";
+    const sectionHtml = document.getElementById(id).innerHTML;
+    mainContent.innerHTML = sectionHtml;
 }
 
 displaySection("aboutSection")

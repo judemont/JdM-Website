@@ -80,9 +80,9 @@ a {
     font-family: "VT323";
 }
 
-.main-content div {
+/* .main-content div {
     display: none;
-}
+} */
 
 .main-content p + ul {
     margin-left: 10vh;
