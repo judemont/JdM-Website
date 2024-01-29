@@ -43,7 +43,7 @@ a {
 .nav li {
     display: inline;
     cursor: pointer;
-    margin: 25px;
+    margin: 1vw;
     font-size: larger;
 }
 
@@ -81,9 +81,6 @@ a {
     font-family: "VT323";
 }
 
-/* .main-content div {
-    display: none;
-} */
 
 .main-content p + ul {
     margin-left: 10vh;
@@ -91,4 +88,16 @@ a {
 
 .main-content .skillIcon {
     width: 60px;
+}
+
+
+@media (pointer:coarse) {
+    .nav li  {
+        background-color: #15ff00;
+        color: #000;
+    }
+
+    .nav li span {
+        visibility: visible;
+    }
 }
