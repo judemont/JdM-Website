@@ -6,11 +6,13 @@ function displaySection(id) {
     console.log(id);
     
     Array.from(mainContent.getElementsByTagName("div")).forEach(div => {
-        div.style.visibility = "hidden";
+        div.style.display = "none";
     });
 
-    document.getElementById(id).style.visibility = "visible";
+    document.getElementById(id).style.display = "block";
 }
+
+displaySection("aboutSection")
 
 let interval = setInterval(function() {
     let counter = 0;
@@ -27,3 +29,4 @@ let interval = setInterval(function() {
     }, 90);
     clearInterval(interval);
 }, 5000);
+

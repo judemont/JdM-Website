@@ -7,82 +7,87 @@
     font-display: swap;
 }
 
-
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%
-}   
-
-body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    max-height: 100%;
-    float: left;
-    width: 100%;
 }
 
 body {
-    background-color: rgb(12, 7, 7);
+    background-color: #2e2e2e;
 }
 
 header {
+    text-align: center;
     width: 100%;
     position: static;
-    margin-top: 0;
-    background-color: rgb(0, 0, 0);
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    margin: 0; /* Supprime l'espace entre le header et le haut de la page */
+    background-color: #1b1b1b;
+    user-select: none;
     font-family: "VT323";
 }
 
-
-
 .nav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     font-size: larger;
     font-weight: bolder;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
 .nav li {
     cursor: pointer;
-    width: fit-content;
     margin: 25px;
     font-size: larger;
+    position: relative;
+}
+
+.nav li:hover  {
+    background-color: #15ff00;
+    color: #000;
 }
 
 .nav li span {
     visibility: hidden;
-}
-
-.nav li:hover  {
-    background-color: rgb(21, 255, 0);
-    color: rgb(0, 0, 0);
+    position: absolute;
+    background-color: blue !important;
 }
 
 .nav li:hover span {
     visibility: visible;
-    background-color: blue !important;
 }
 
 .mainTitle {
     height: min-content;
+    width: fit-content;
     text-align: center;
-    color: rgb(0, 255, 21);
+    color: #0ff015;
     font-size: 100px;
     cursor: progress;
+    margin: 0 auto; /* Centre horizontalement le titre */
+}
 
+.main-content {
+    margin: 0 auto 40px; /* Centre horizontalement le contenu et ajoute une marge en bas */
+    max-width: 60vw; /* Limite la largeur du contenu */
+    color: aqua;
+}
 
+.main-content h1 {
+    font-family: "VT323";
 }
 
 .main-content div {
-    visibility: hidden;
+    display: none;
+}
+
+.main-content p + ul {
+    margin-left: 10vh;
+}
+
+.main-content .skillIcon {
+    width: 60px;
 }
