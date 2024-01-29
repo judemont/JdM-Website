@@ -26,6 +26,10 @@ header {
     font-family: "VT323";
 }
 
+a {
+    color: antiquewhite;
+}
+
 .nav {
     list-style-type: none;
     text-align: center;
@@ -69,7 +73,7 @@ header {
 .main-content {
     margin: 0 auto 40px;
     max-width: 60vw;
-    color: aqua;
+    color: rgb(255, 116, 116);
 }
 
 .main-content h1 {
