@@ -24,6 +24,7 @@ header {
     background-color: #1b1b1b;
     user-select: none;
     font-family: "VT323";
+    padding-bottom: 30px;
 }
 
 a {
