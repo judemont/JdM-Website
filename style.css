@@ -95,6 +95,11 @@ a {
 
 }
 
+.setupImg {
+    margin-top: 200px;
+    max-width: 60vw;
+    border-radius: 10px;
+}
 
 @media (pointer:coarse) {
     .nav li  {
