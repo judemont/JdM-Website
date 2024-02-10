@@ -9,6 +9,7 @@
 
 html, body {
     margin: 0;
+
     padding: 0;
     height: 100%;
 }
@@ -25,6 +26,7 @@ header {
     user-select: none;
     font-family: "VT323";
     padding-bottom: 30px;
+
 }
 
 a {
@@ -82,12 +84,15 @@ a {
 }
 
 
+
+
 .main-content p + ul {
     margin-left: 10vh;
 }
 
 .main-content .skillIcon {
     width: 60px;
+
 }
 
 
@@ -99,5 +104,6 @@ a {
 
     .nav li span {
         visibility: visible;
+
     }
 }
