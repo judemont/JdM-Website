@@ -1,3 +1,7 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -9,10 +13,10 @@ body {
     background: url("images/background1.png") center no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: aliceblue;
 }
 
 h1 {
-    color: aliceblue;
     text-align: center;
     font-size: 60px;
 }
@@ -22,7 +26,10 @@ h1 b {
 }
 
 section {
-    margin-top: 10vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;  
+
+    padding-top: 10vh;
     height: 90vh;
 }
 
@@ -30,4 +37,12 @@ section {
     margin: auto;
     display: block;
     width: 400px;
+}
+
+.introduction {
+    font-weight: bold;
+    font-size: large;
+
+    margin: auto;
+    width: 40vw;
 }
