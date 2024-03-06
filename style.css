@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    width: 100vw;
+    background: url("images/background1.png") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 60px;
+}
+
+h1 b {
+    text-decoration: rgb(234, 0, 255) underline;
+}
+
+section {
+    margin-top: 10vh;
+    height: 90vh;
+}
+
+.profile-image {
+    margin: auto;
+    display: block;
+    width: 400px;
+}
