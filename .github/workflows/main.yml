@@ -2,6 +2,8 @@ name: FTP Deployment
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
   deploy:
