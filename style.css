@@ -1,110 +1,48 @@
-@font-face {
-    font-family: 'VT323';
-    src: url('fonts/VT323-Regular.woff2') format('woff2'),
-        url('fonts/VT323-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+html {
+    scroll-snap-type: y mandatory;
 }
 
 html, body {
     margin: 0;
-
     padding: 0;
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
-    background-color: #2e2e2e;
+    width: 100vw;
+    background: url("images/background1.png") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
 }
 
-header {
-    width: 100%;
-    position: static;
-    margin: 0;
-    background-color: #1b1b1b;
-    user-select: none;
-    font-family: "VT323";
-    padding-bottom: 30px;
-
-}
-
-a {
-    color: antiquewhite;
-}
-
-.nav {
-    list-style-type: none;
+h1 {
     text-align: center;
-    padding: 0;
-    font-size: larger;
-    font-weight: bolder;
-    color: #fff;
+    font-size: 60px;
 }
 
-.nav li {
-    display: inline;
-    cursor: pointer;
-    margin: 1vw;
-    font-size: larger;
+h1 b {
+    text-decoration: rgb(234, 0, 255) underline;
 }
 
-.nav li:hover  {
-    background-color: #15ff00;
-    color: #000;
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;  
+
+    padding-top: 10vh;
+    height: 90vh;
 }
 
-.nav li span {
-    visibility: hidden;
-    background-color: blue !important;
+.profile-image {
+    margin: auto;
+    display: block;
+    width: 400px;
 }
 
-.nav li:hover span {
-    visibility: visible;
-}
+.introduction {
+    font-weight: bold;
+    font-size: large;
 
-.mainTitle {
-    height: min-content;
-    width: fit-content;
-    text-align: center;
-    color: #0ff015;
-    font-size: 100px;
-    cursor: progress;
-    margin: 0 auto;
-}
-
-.main-content {
-    margin: 0 auto 40px;
-    max-width: 60vw;
-    color: rgb(255, 116, 116);
-}
-
-.main-content h1 {
-    font-family: "VT323";
-}
-
-.main-content p + ul {
-    margin-left: 10vh;
-}
-
-.main-content .skillIcon {
-    width: 60px;
-
-}
-
-.aboutImg {
-    max-width: 60vw;
-    border-radius: 10px;
-}
-
-@media (pointer:coarse) {
-    .nav li  {
-        background-color: #15ff00;
-        color: #000;
-    }
-
-    .nav li span {
-        visibility: visible;
-
-    }
+    margin: auto;
+    width: 40vw;
 }
