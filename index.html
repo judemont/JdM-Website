@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JdM's WebSite</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts/background.js" defer></script>
 
 </head>
 <body>
-    <video class="background-video" autoplay muted loop poster="images/backgroundCover.png">
-        <source src="images/background.mp4" type="video/mp4">
+    <video id="backgroundVideo" class="background-video" autoplay muted loop poster="images/backgroundCover.png">
+        <source id="backgroundVideoSource" src="" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <div class="overlay"></div>
