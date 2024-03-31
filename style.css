@@ -110,4 +110,8 @@ section {
     section {
         margin-top: 20vh;
     }
+
+    .profile-image {
+        width: 200px;
+    }
 }
