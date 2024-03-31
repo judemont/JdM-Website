@@ -81,6 +81,22 @@ section {
     float: ce;
 } */
 
+.myLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;   
+}
+
+.myLinks img {
+    border-radius: 20px;
+    max-width: 60px;
+    padding: 10px;
+    transition: 0.1s;
+}
+
+.myLinks img:hover {
+    transform: scale(1.2);
+}
 
 @media only screen and (max-width: 800px) {
     .introduction {
