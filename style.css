@@ -98,6 +98,38 @@ section {
     transform: scale(1.2);
 }
 
+.projects {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.projects a {
+    display: block;
+    max-width: 200px;
+    background-color: #551a8b;
+    border-radius: 30px;
+    padding: 20px;
+    color: antiquewhite;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.projects a:hover {
+    transform: scale(1.1);
+}
+
+.projects a .description {
+    font-style: italic;
+}
+
+.projects a .language {
+    font-weight: bold;
+    color: #ffee00;
+}
+
 @media only screen and (max-width: 800px) {
     .introduction {
         width: 80vw;
@@ -114,4 +146,12 @@ section {
     .profile-image {
         width: 200px;
     }
+
+    .projects {
+        flex-wrap: wrap;
+        overflow:scroll;
+        height: 50%;
+        margin: auto;
+    }
+
 }
