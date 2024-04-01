@@ -38,6 +38,7 @@ section {
 
 .homeSection {
     background: none;
+    border-bottom: 20px solid #801c5c;
 }
 
 .background-video {
