@@ -203,8 +203,10 @@ section {
     }
 
     section {
-        margin-bottom: 20vh;
-        padding-top: 1vh;
+        /* margin-bottom: 20vh; */
+        /* padding-top: 1vh; */
+        height: 100vh;
+
     }
 
 
