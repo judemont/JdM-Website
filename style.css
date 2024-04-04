@@ -104,7 +104,7 @@ section {
 
 .setup-img:hover {
     opacity: 0.5;
-    transform: scale(3.5) translateY(20px) translateX(-10px);
+    transform: scale(1.2);
 }
 
 .myLinks {
