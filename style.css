@@ -128,11 +128,11 @@ section {
 }
 
 .projects {
-    width: 70vw;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
+    margin-left: 50px;
 }
 
 .projects a {
