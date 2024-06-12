@@ -161,7 +161,7 @@ footer{
     margin: auto;
     display: block;
     overflow-wrap: break-word;
-    max-width: 50vw;
+    max-width: 80vw;
 }
 
 @media only screen and (max-width: 800px) {
