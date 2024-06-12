@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'VT323';
+    src: url('fonts/VT323-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Teko Light';
+    src: url('fonts/Teko-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -8,6 +21,8 @@ body {
     width: 100vw;
     color: hsl(205, 16%, 77%);
     background-color: #33414a;
+    font-family: 'Teko Light';
+    font-size: x-large;
 
 }
 
@@ -16,8 +31,10 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 80px;
     color: white;
+    font-family:'VT323';
+
 }
 
 b {
@@ -76,7 +93,6 @@ footer{
 
 .introduction {
     font-weight: bold;
-    font-size: large;
 
     margin: auto;
     width: 40vw;
@@ -173,23 +189,11 @@ footer{
         padding-top: 1vh !important;
     }
 
-    section {
-        /* margin-bottom: 20vh; */
-        /* padding-top: 1vh; */
-        height: 100vh;
-
-    }
 
 
     .profile-image {
         width: 200px;
     }
 
-    .projects {
-        flex-wrap: wrap;
-        overflow:scroll;
-        height: 60vh;
-        margin: auto;
-    }
 
 }
