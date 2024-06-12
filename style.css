@@ -1,7 +1,3 @@
-html {
-    scroll-snap-type: y mandatory;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -10,7 +6,9 @@ html, body {
 
 body {
     width: 100vw;
-    color: aliceblue;
+    color: hsl(205, 16%, 77%);
+    background-color: #33414a;
+
 }
 
 h1, h2, h3 {
@@ -19,6 +17,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 60px;
+    color: white;
 }
 
 b {
@@ -26,17 +25,17 @@ b {
 }
 
 section {
-    background: url("images/background.jpg") center;
-    background-size: cover;
 
-    scroll-snap-align: start;
-    scroll-snap-stop: always;  
+    padding-top: 5vh;
+}
 
-    padding-top: 10vh;
-    height: 90vh;
+footer{ 
+    margin-bottom: 40px;
 }
 
 .homeSection {
+    height: 90vh;
+
     background: none;
     border-bottom: 20px solid #801c5c;
 }
@@ -73,8 +72,6 @@ section {
     opacity: 0.5;
     transform: scale(1.1);
 }
-
-
 
 
 .introduction {
@@ -158,6 +155,13 @@ section {
 .projects a .language {
     font-weight: bold;
     color: #ffee00;
+}
+
+.donate p {
+    margin: auto;
+    display: block;
+    overflow-wrap: break-word;
+    max-width: 50vw;
 }
 
 @media only screen and (max-width: 800px) {
