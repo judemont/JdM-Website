@@ -141,7 +141,7 @@ a:has(button) {
     display: block;
     margin: 0 auto;
     position: relative;
-    top: 8vh;
+    top: 5vh;
     animation: attractiveButton 2.5s infinite ease-in;
 }
 
