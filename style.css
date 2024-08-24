@@ -10,6 +10,10 @@
     --on-tertiary: #7D5260;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--surface);
     color: var(--on-surface);
