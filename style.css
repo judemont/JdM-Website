@@ -5,13 +5,9 @@
     --primary: #6750A4;
     --on-primary: #FFFFFF;
     --primary-container: #EADDFF;
-
-    /* DARK */
-    --surface-dark: #141218;
-    --on-surface-dark: #E6E0E9;
-    --primary-dark: #D0BCFF;
-    --on-primary-dark: #381E72;
-    --primary-container-dark: #4F378B;
+    --on-primary-container: #4F378B;
+    --tertiary: #7D5260;
+    --on-tertiary: #7D5260;
 }
 
 body {
@@ -23,9 +19,26 @@ body.appearance-animation {
     animation: 2s ease-in 0s 1 appearance;
 }
 
+.m-button {
+    font-size: large;
+    font-weight: bold;
+    color: var(--on-tertiary);
+    background-color: var(--tertiary);
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: var(--on-surface) 0px 4px 12px;
+    transition: all 0.5s;
+}
+
+.m-button:hover {
+    transform: scale(1.5);
+}
+
 .first-title {
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 5vh;
     font-size: 70px;
     font-weight: 700;
     user-select: none;
@@ -101,6 +114,17 @@ body.appearance-animation {
     position:absolute;
     top:0;
     right:0;
+}
+
+
+
+
+
+.discover-button {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 8vh;
 }
 
 @keyframes appearance {

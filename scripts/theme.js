@@ -32,6 +32,10 @@ function darkTheme() {
     r.style.setProperty('--primary', '#D0BCFF');
     r.style.setProperty('--on-primary', '#381E72');
     r.style.setProperty('--primary-container', '#4F378B');
+    r.style.setProperty('--on-primary-container', '#EADDFF');
+    r.style.setProperty('--tertiary', '#EFB8C8');
+    r.style.setProperty('--on-tertiary', '#492532');
+
 
     switchThemeImage.src = "images/sun.svg";
 
@@ -49,6 +53,10 @@ function lightTheme() {
     r.style.setProperty('--primary', '#6750A4');
     r.style.setProperty('--on-primary', '#FFFFFF');
     r.style.setProperty('--primary-container', '#EADDFF');
+    r.style.setProperty('--on-primary-container', '#4F378B');
+    r.style.setProperty('--tertiary', '#7D5260');
+    r.style.setProperty('--on-tertiary', '#FFFFFF');
+
 
     switchThemeImage.src = "images/moon.svg";
 
