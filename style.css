@@ -50,6 +50,11 @@ body {
     border-radius: 50%;
     cursor: pointer;
     box-shadow: var(--on-surface) 0px 4px 12px;
+    transition: all 0.5s;
+}
+
+.icon-button:hover {
+    transform: scale(1.5);
 }
 
 .icon-button-discord {
