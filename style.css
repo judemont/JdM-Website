@@ -34,6 +34,7 @@ body.appearance-animation {
 
 .m-button:hover {
     transform: scale(1.5);
+    box-shadow: var(--on-surface) 0px 40px 12px;
 }
 
 .first-title {
@@ -79,6 +80,8 @@ body.appearance-animation {
 
 .icon-button:hover {
     transform: scale(1.5);
+    box-shadow: var(--on-surface) 0px 40px 12px;
+
 }
 
 .icon-button-discord {
