@@ -150,6 +150,13 @@ a:has(button) {
     
 }
 
+.hair-image {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+
 @media (hover: hover) {
     .m-button:hover {
         animation: none;
