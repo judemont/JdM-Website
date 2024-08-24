@@ -15,6 +15,12 @@ function setTheme(theme) {
         lightTheme();
         localStorage.setItem("theme", "light");
     }
+
+    document.body.classList.add("appearance-animation");
+
+    setTimeout(()=>{
+        document.body.classList.remove("appearance-animation");
+    }, 2050)
 }
 
 function darkTheme() {
