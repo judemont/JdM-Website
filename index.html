@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JdM'Site</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts/theme.js"></script>
+    <script src="scripts/theme.js" defer></script>
 </head>
 
 <body>
     <div class="theme-mode-container">
         <button onclick="switchTheme()" class="icon-button theme-mode-button">
-            <img class="icon-button-image" src="images/moon.svg" alt="">
+            <img id="switchThemeImage" class="icon-button-image" src="images/moon.svg" alt="">
         </button>
     </div>
 
@@ -23,26 +23,26 @@
 
         <a href="http://github.com/judemont" target="_blank" rel="noopener noreferrer">
             <button class="icon-button">
-                <img class="icon-button-image" src="images/social_icons/github.svg" alt="">
+                <img id="githubIcon" class="icon-button-image" src="images/social_icons/github.svg" alt="">
             </button>
         </a>
 
         <a href="https://signal.me/#eu/wzJyfbnckMMmu5jw+RV/qivMpQmMCKl674adHd1aQ+opeF++NaFFpIOQ3bGnMI1n" target="_blank"
             rel="noopener noreferrer">
             <button class="icon-button">
-                <img class="icon-button-image" src="images/social_icons/signal.svg" alt="">
+                <img id="signalIcon" class="icon-button-image" src="images/social_icons/signal.svg" alt="">
             </button>
         </a>
 
         <a href="http://t.me/judemont" target="_blank" rel="noopener noreferrer">
             <button class="icon-button">
-                <img class="icon-button-image" src="images/social_icons/telegram.svg" alt="">
+                <img id="telegramIcon" class="icon-button-image" src="images/social_icons/telegram.svg" alt="">
             </button>
         </a>
 
         <a href="https://discord.com/users/8453" target="_blank" rel="noopener noreferrer">
             <button class="icon-button icon-button-discord">
-                <img class="icon-button-image" src="images/social_icons/discord.svg" alt="">
+                <img id="discordIcon" class="icon-button-image" src="images/social_icons/discord.svg" alt="">
             </button>
         </a>
 
