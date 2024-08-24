@@ -17,6 +17,7 @@ html {
 body {
     background-color: var(--surface);
     color: var(--on-surface);
+    scrollbar-width: none;
 }
 
 body.appearance-animation {
@@ -25,6 +26,12 @@ body.appearance-animation {
 
 a:has(button) {
     text-decoration: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
 }
 
 .m-button {
@@ -40,11 +47,6 @@ a:has(button) {
     transition: all 0.5s;
 }
 
-.m-button:hover {
-    animation: none;
-    transform: scale(1.2) !important;
-    box-shadow: var(--on-surface) 0px 35px 12px !important;
-}
 
 .first-title {
     text-align: center;
@@ -97,11 +99,7 @@ a:has(button) {
     transition: all 0.5s;
 }
 
-.icon-button:hover {
-    transform: scale(1.5);
-    box-shadow: var(--on-surface) 0px 40px 12px;
 
-}
 
 .icon-button-discord {
     padding: 15px;
@@ -149,6 +147,20 @@ a:has(button) {
 
 .main-content {
     margin-top: 100vh;
+    
+}
+
+@media (hover: hover) {
+    .m-button:hover {
+        animation: none;
+        transform: scale(1.2) !important;
+        box-shadow: var(--on-surface) 0px 35px 12px !important;
+    }
+    .icon-button:hover {
+        transform: scale(1.5);
+        box-shadow: var(--on-surface) 0px 40px 12px;
+    
+    }
     
 }
 
