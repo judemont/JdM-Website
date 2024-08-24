@@ -19,6 +19,10 @@ body.appearance-animation {
     animation: 2s ease-in 0s 1 appearance;
 }
 
+a:has(button) {
+    text-decoration: none;
+}
+
 .m-button {
     font-size: large;
     font-weight: bold;
@@ -42,6 +46,16 @@ body.appearance-animation {
     text-align: center;
     margin-top: 5vh;
     font-size: 70px;
+    font-weight: 700;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.second-title {
+    text-align: center;
+    font-size: 50px;
     font-weight: 700;
     user-select: none;
     -moz-user-select: none;
@@ -127,6 +141,11 @@ body.appearance-animation {
     position: relative;
     top: 8vh;
     animation: attractiveButton 2.5s infinite ease-in;
+}
+
+.main-content {
+    margin-top: 100vh;
+    
 }
 
 @keyframes attractiveButton {
