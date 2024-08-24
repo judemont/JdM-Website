@@ -1,10 +1,17 @@
 :root {
+    /* LIGHT */
     --surface: #FEF7FF;
     --on-surface: #1D1B20;
     --primary: #6750A4;
     --on-primary: #FFFFFF;
     --primary-container: #EADDFF;
-    --tertiary: #7D5260;
+
+    /* DARK */
+    --surface-dark: #141218;
+    --on-surface-dark: #E6E0E9;
+    --primary-dark: #D0BCFF;
+    --on-primary-dark: #381E72;
+    --primary-container-dark: #4F378B;
 }
 
 body {
