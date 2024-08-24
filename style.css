@@ -28,13 +28,14 @@ body.appearance-animation {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: var(--on-surface) 0px 4px 12px;
+    box-shadow: var(--on-surface) 0px 20px 12px;
     transition: all 0.5s;
 }
 
 .m-button:hover {
-    transform: scale(1.5);
-    box-shadow: var(--on-surface) 0px 40px 12px;
+    animation: none;
+    transform: scale(1.2) !important;
+    box-shadow: var(--on-surface) 0px 35px 12px !important;
 }
 
 .first-title {
@@ -120,23 +121,36 @@ body.appearance-animation {
 }
 
 
-
-
-
 .discover-button {
     display: block;
     margin: 0 auto;
     position: relative;
     top: 8vh;
+    animation: attractiveButton 2.5s infinite ease-in;
+}
+
+@keyframes attractiveButton {
+    0% {
+      transform: scale(1);
+      box-shadow: var(--on-surface) 0px 20px 12px;
+    }
+    50% {
+        transform: scale(1.07);
+        box-shadow: var(--on-surface) 0px 25px 12px;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: var(--on-surface) 0px 20px 12px;
+    }
 }
 
 @keyframes appearance {
-    0% {
+    from {
       /* transform: translateX(-100%); */
       opacity: 0;
     }
-    100% {
+    to {
       /* transform: translateX(0); */
       opacity: 1;
     }
-  }
+}
