@@ -25,7 +25,7 @@ body.appearance-animation {
     animation: 2s ease-in 0s 1 appearance;
 }
 
-a:has(button) {
+a {
     text-decoration: none;
 }
 
