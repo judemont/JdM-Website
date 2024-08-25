@@ -145,7 +145,7 @@ a:has(button) {
     animation: attractiveButton 2.5s infinite ease-in;
 }
 
-.main-content {
+.second-content {
     margin-top: 100vh;
     
 }
@@ -155,6 +155,14 @@ a:has(button) {
     top: 0px;
     left: 0px;
     z-index: 999;
+}
+
+.setupImage {
+    width: 90vw;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 600px) {
