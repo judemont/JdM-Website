@@ -28,6 +28,7 @@ function darkTheme() {
 
 
     r.style.setProperty('--surface', '#141218');
+    r.style.setProperty('--surface-container-low', '#1D1B20');
     r.style.setProperty('--on-surface', '#E6E0E9');
     r.style.setProperty('--primary', '#D0BCFF');
     r.style.setProperty('--on-primary', '#381E72');
@@ -49,6 +50,7 @@ function lightTheme() {
     let switchThemeImage = document.getElementById("switchThemeImage");
 
     r.style.setProperty('--surface', '#FEF7FF');
+    r.style.setProperty('--surface-container-low', '#F7F2FA');
     r.style.setProperty('--on-surface', '#1D1B20');
     r.style.setProperty('--primary', '#6750A4');
     r.style.setProperty('--on-primary', '#FFFFFF');

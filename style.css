@@ -1,6 +1,7 @@
 :root {
     /* LIGHT */
     --surface: #FEF7FF;
+    --surface-container-low: #F7F2FA;
     --on-surface: #1D1B20;
     --primary: #6750A4;
     --on-primary: #FFFFFF;
@@ -120,9 +121,6 @@ a:has(button) {
     height: 80%;
 }
 
-.theme-mode-container {
-    display: flex;
-}
 
 .theme-mode-button {
     line-height: 12px;
@@ -131,9 +129,10 @@ a:has(button) {
 
     margin-top: 50px;
     margin-right: 50px;
-    position:absolute;
+    position: fixed;
     top:0;
     right:0;
+    z-index: 101;
 }
 
 
@@ -165,6 +164,25 @@ a:has(button) {
     border-radius: 20px;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px;
+    gap: 40px;
+}
+
+.project {
+    color: var(--on-primary-container);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--primary-container);
+    max-width: 400px;
+    width: 80vw;
+    box-shadow: var(--on-surface) 0px 15px 12px !important;
+    transition: all 0.3s ease-in;
+}
+
 @media only screen and (max-width: 600px) {
     .hair-image {
         display: none;
@@ -180,7 +198,10 @@ a:has(button) {
     .icon-button:hover {
         transform: scale(1.5);
         box-shadow: var(--on-surface) 0px 40px 12px;
-    
+    }
+    .project:hover {
+        transform: scale(1.2);
+        box-shadow: var(--on-surface) 0px 40px 12px;
     }
     
 }
