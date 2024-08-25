@@ -157,6 +157,12 @@ a:has(button) {
     z-index: 999;
 }
 
+@media only screen and (max-width: 600px) {
+    .hair-image {
+        display: none;
+    }
+}
+
 @media (hover: hover) {
     .m-button:hover {
         animation: none;
