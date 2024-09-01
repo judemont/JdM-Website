@@ -11,11 +11,18 @@
     --on-tertiary: #7D5260;
 }
 
+@font-face {
+    font-family: AnomalyMono;
+    src: url(fonts/AnomalyMono-Regular.otf);
+}
+  
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    font-family: AnomalyMono;
     background-color: var(--surface);
     color: var(--on-surface);
     scrollbar-width: none;
@@ -58,6 +65,7 @@ a {
     -moz-user-select: none;
     -webkit-user-select: none;
     cursor: default;
+
 }
 
 .second-title {
