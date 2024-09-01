@@ -183,6 +183,27 @@ a {
     transition: all 0.3s ease-in;
 }
 
+.about {
+    text-align: justify;
+
+    width: 80vw;
+    max-width: 500px;
+    display: block;
+    margin: 50px auto;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.donate {
+    word-break: break-all;
+}
+
+.donate img {
+    height: 50px;
+}
+
 @media only screen and (max-width: 600px) {
     .hair-image {
         display: none;
