@@ -1,5 +1,5 @@
 const r = document.querySelector(':root');
-const socialIconsIds = ["githubIcon", "signalIcon", "telegramIcon", "discordIcon"];
+const socialIconsIds = ["githubIcon", "signalIcon", "telegramIcon", "discordIcon", "linkedinIcon"];
 
 function switchTheme() {
     let theme = localStorage.getItem("theme");
@@ -42,7 +42,7 @@ function darkTheme() {
 
     for (let i = 0; i < socialIconsIds.length; i++) {
         const el = document.getElementById(socialIconsIds[i])
-        el.src =  el.src.replace("dark_", "").replace(".svg", "") + "_dark.svg";
+        el.src =  el.src.replace("_dark", "").replace(".svg", "") + "_dark.svg";
     }
 }
 
