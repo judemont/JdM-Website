@@ -11,11 +11,18 @@
     --on-tertiary: #7D5260;
 }
 
+@font-face {
+    font-family: AnomalyMono;
+    src: url(fonts/AnomalyMono-Regular.otf);
+}
+  
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    font-family: AnomalyMono;
     background-color: var(--surface);
     color: var(--on-surface);
     scrollbar-width: none;
@@ -58,6 +65,7 @@ a {
     -moz-user-select: none;
     -webkit-user-select: none;
     cursor: default;
+
 }
 
 .second-title {
@@ -113,8 +121,8 @@ a {
 }
 
 .social-icons-container button {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
 }
 
 .icon-button-image {
@@ -181,6 +189,27 @@ a {
     width: 80vw;
     box-shadow: var(--on-surface) 0px 15px 12px !important;
     transition: all 0.3s ease-in;
+}
+
+.about {
+    text-align: justify;
+
+    width: 80vw;
+    max-width: 500px;
+    display: block;
+    margin: 50px auto;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.donate {
+    word-break: break-all;
+}
+
+.donate img {
+    height: 50px;
 }
 
 @media only screen and (max-width: 600px) {
