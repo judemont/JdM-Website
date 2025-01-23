@@ -28,7 +28,7 @@
     height: 150px;
     padding: 20px;
     border-radius: 20px;
-    border: solid wheat 5px;
+    border: solid #f5deb3 5px;
 
     transition: all 500ms;
 }

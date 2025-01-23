@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {    
+body {
     color: #f5deb3;
     background-color: black;
     margin: 0px;
@@ -25,12 +25,18 @@ section h1 {
     text-align: center;
 }
 
+footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
 .welcome-div h2 {
     font-family: Anomaly;
 }
 
 .welcome-div {
-    box-shadow: 20px 10px 10px rgb(92, 82, 65) ;
+    box-shadow: 20px 10px 10px rgb(92, 82, 65);
 
     width: 45vw;
     height: 43vh;
@@ -79,7 +85,7 @@ section h1 {
 .discoverButton:hover {
     background-color: #f5deb3;
     color: black;
-    
+
 }
 
 .social-icons {
