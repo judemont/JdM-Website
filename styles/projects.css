@@ -1,7 +1,8 @@
 .projects-place {
     display: block;
     margin: auto;
-    margin-top: 50vh;
+    margin-top: 40vh;
+    padding-top: 10vh;
     width: 80vw;
 }
 
