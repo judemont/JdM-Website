@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/donate.css">
+    <link rel="stylesheet" href="styles/emojisRain.css">
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="scripts/emojisRain.js" defer></script>
 </head>
 
 <body>
+    <div id="emoji-container"></div>
+
+
     <section class="welcome-div">
         <h1>Welcome to JdM's Site</h1>
         <h2>I devote my time to Imagining and Creating the Future of the Humanity 🌐.</h2>
@@ -36,7 +42,7 @@
         </div>
         <br>
         <a href="#projects">
-            <button class="discoverButton">Discover the future</button>
+            <button class="discoverButton" onclick="createRain()">Discover the future</button>
         </a>
     </section>
 
